@@ -3,3 +3,80 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 1rem;
+}
+h3 {
+  font-size: 0.85rem;
+}
+h4 {
+  font-size: 0.75rem;
+}
+h5 {
+  font-size: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+#LandingPage {
+  height: 100vh;
+  padding: 3rem;
+}
+
+#Header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  h1 {
+    background: -webkit-linear-gradient(rgb(197, 136, 136), rgb(219, 135, 203));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  span {
+    margin: 0rem 0.25rem;
+  }
+  a {
+    color: black;
+    cursor: pointer;
+    margin-left: 1rem;
+  }
+  .current-version {
+    border-bottom: 1px solid rgb(221, 221, 221);
+  }
+}
+
+#Subheader {
+  color: rgb(44, 44, 44);
+  padding-left: 1.5rem;
+  max-width: 40%;
+}
+
+#StickyFooter {
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+}

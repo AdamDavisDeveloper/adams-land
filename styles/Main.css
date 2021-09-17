@@ -4,4 +4,102 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+h3 {
+  font-size: 0.85rem;
+}
+
+h4 {
+  font-size: 0.75rem;
+}
+
+h5 {
+  font-size: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+#LandingPage {
+  height: 100vh;
+  padding: 3rem;
+}
+
+#Header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#Header h1 {
+  background: -webkit-linear-gradient(#c58888, #db87cb);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#Header span {
+  margin: 0rem 0.25rem;
+}
+
+#Header a {
+  color: black;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+#Header .current-version {
+  border-bottom: 1px solid #dddddd;
+}
+
+#Subheader {
+  color: #2c2c2c;
+  padding-left: 1.5rem;
+  max-width: 40%;
+}
+
+#StickyFooter {
+  padding: 0.5rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+}
 /*# sourceMappingURL=Main.css.map */
