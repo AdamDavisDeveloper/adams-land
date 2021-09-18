@@ -1,3 +1,5 @@
+@import "./Dreams";
+
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +17,7 @@ h4,
 h5,
 h6 {
   font-weight: 400;
+  color: rgb(44, 44, 44);
 }
 
 h1 {
@@ -37,6 +40,12 @@ a {
   text-decoration: none;
 }
 
+li {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+//Landing Page styles
 #LandingPage {
   height: 100vh;
   padding: 3rem;
@@ -69,6 +78,7 @@ a {
   color: rgb(44, 44, 44);
   padding-left: 1.5rem;
   max-width: 40%;
+  margin-bottom: 5rem;
 }
 
 #StickyFooter {
@@ -79,4 +89,27 @@ a {
   position: sticky;
   bottom: 0;
   left: 0;
+}
+
+//Directory styles
+#Directory {
+  margin-left: 1.5rem;
+  display: inline-block;
+  padding: 1rem;
+  border: 1.5px solid rgb(44, 44, 44);
+  border-radius: 5px;
+  ul {
+    background: white;
+    li {
+      margin: 0.5rem 0rem;
+      background: -webkit-linear-gradient(
+        rgb(197, 136, 136),
+        rgb(219, 135, 203)
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      list-style: none;
+    }
+  }
 }

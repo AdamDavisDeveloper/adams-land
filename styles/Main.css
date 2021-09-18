@@ -1,3 +1,22 @@
+#Underland {
+  background: #101633;
+}
+
+#Underland canvas {
+  display: block;
+}
+
+#Underland #particles-js {
+  position: absolute;
+  width: 100%;
+  height: 500%;
+  background-color: #101633;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +35,7 @@ h4,
 h5,
 h6 {
   font-weight: 400;
+  color: #2c2c2c;
 }
 
 h1 {
@@ -40,6 +60,11 @@ h5 {
 
 a {
   text-decoration: none;
+}
+
+li {
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 #LandingPage {
@@ -84,6 +109,7 @@ a {
   color: #2c2c2c;
   padding-left: 1.5rem;
   max-width: 40%;
+  margin-bottom: 5rem;
 }
 
 #StickyFooter {
@@ -101,5 +127,26 @@ a {
   position: sticky;
   bottom: 0;
   left: 0;
+}
+
+#Directory {
+  margin-left: 1.5rem;
+  display: inline-block;
+  padding: 1rem;
+  border: 1.5px solid #2c2c2c;
+  border-radius: 5px;
+}
+
+#Directory ul {
+  background: white;
+}
+
+#Directory ul li {
+  margin: 0.5rem 0rem;
+  background: -webkit-linear-gradient(#c58888, #db87cb);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  list-style: none;
 }
 /*# sourceMappingURL=Main.css.map */
