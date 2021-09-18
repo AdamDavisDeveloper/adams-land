@@ -1,7 +1,7 @@
 #Return {
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: 40px;
   left: 0;
 }
 
@@ -28,11 +28,8 @@
 }
 
 #Underland {
-  background: #101633;
   padding: 3rem;
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
 }
 
 #Underland .title {
@@ -79,10 +76,12 @@
   margin: auto;
   position: relative;
   top: 30vh;
+  padding-bottom: 10rem;
 }
 
 #DreamCards .dream-entry {
   width: 100%;
+  margin-bottom: 6rem;
   background: white;
   padding: 1rem;
   -webkit-box-shadow: -4px 0px 6px rgba(255, 255, 255, 0.5), 4px 4px 6px rgba(255, 255, 255, 0.5);
@@ -105,13 +104,14 @@
 
 canvas {
   display: block;
+  position: absolute;
 }
 
 #particles-js {
   position: absolute;
   z-index: -100;
   width: 100%;
-  height: 500%;
+  height: 100%;
   background-color: #101633;
   background-image: url("");
   background-repeat: no-repeat;
@@ -128,6 +128,7 @@ canvas {
 
 html {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 h1,
