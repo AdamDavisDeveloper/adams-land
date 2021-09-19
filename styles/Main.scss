@@ -1,4 +1,5 @@
 @import "./Dreams";
+@import "./Notes";
 
 * {
   margin: 0;
@@ -97,11 +98,18 @@ li {
 
 //Directory styles
 #Directory {
+  position: relative;
   margin-left: 1.5rem;
   display: inline-block;
   padding: 1rem;
   border: 1.5px solid rgb(44, 44, 44);
   border-radius: 5px;
+  width: 22rem;
+  .leaves {
+    position: absolute;
+    top: -22px;
+    left: 10px;
+  }
   ul {
     background: white;
     li {

@@ -237,11 +237,19 @@ li {
 }
 
 #Directory {
+  position: relative;
   margin-left: 1.5rem;
   display: inline-block;
   padding: 1rem;
   border: 1.5px solid #2c2c2c;
   border-radius: 5px;
+  width: 22rem;
+}
+
+#Directory .leaves {
+  position: absolute;
+  top: -22px;
+  left: 10px;
 }
 
 #Directory ul {
