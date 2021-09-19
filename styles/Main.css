@@ -119,20 +119,21 @@ canvas {
   background-position: 50% 50%;
 }
 
-#Notes {
+#Thoughts {
   padding: 3rem;
   min-height: 100vh;
   background: linear-gradient(245.53deg, rgba(249, 182, 162, 0) -37.22%, #f9b6a2 100.63%);
 }
 
-#Notes img {
+#Thoughts .absolute-fern {
   position: absolute;
   bottom: -20px;
   right: 0;
+  z-index: -1;
 }
 
-#Notes .header,
-#Notes .subtitle {
+#Thoughts .header,
+#Thoughts .subtitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,12 +143,43 @@ canvas {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   color: #313131;
+  letter-spacing: 0.2em;
 }
 
-#Notes .header span,
-#Notes .subtitle span {
+#Thoughts .header span,
+#Thoughts .subtitle span {
   font-size: 3rem;
+}
+
+#Thoughts .header a,
+#Thoughts .subtitle a {
+  color: #2f4d70;
+  cursor: pointer;
+}
+
+#ThoughtsCards {
+  width: 50%;
+  margin: auto;
+  margin-top: 3rem;
+  overflow-y: scroll;
+}
+
+#ThoughtsCards .thoughts-entry {
+  margin-bottom: 6rem;
+}
+
+#ThoughtsCards .date-time {
+  margin-bottom: 1rem;
+}
+
+#ThoughtsCards .content p {
+  line-height: 20px;
+  letter-spacing: 0.1em;
 }
 
 * {
@@ -296,5 +328,9 @@ li {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   list-style: none;
+}
+
+#Directory ul li:hover {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=Main.css.map */

@@ -1,5 +1,5 @@
 @import "./Dreams";
-@import "./Notes";
+@import "./Thoughts";
 
 * {
   margin: 0;
@@ -124,6 +124,9 @@ li {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       list-style: none;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
