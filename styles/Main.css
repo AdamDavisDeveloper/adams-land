@@ -242,6 +242,8 @@ li {
   display: inline-block;
   padding: 1rem;
   border: 1.5px solid #2c2c2c;
+  border-bottom: 2.5px solid #2c2c2c;
+  border-left: 2.5px solid #2c2c2c;
   border-radius: 5px;
   width: 22rem;
 }
