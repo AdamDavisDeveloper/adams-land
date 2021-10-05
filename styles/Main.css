@@ -94,11 +94,11 @@
   letter-spacing: 0.1em;
 }
 
-#DreamCards .dream-entry .date {
+#DreamCards .dream-entry .date-time {
   margin-bottom: 1rem;
 }
 
-#DreamCards .dream-entry .date h1 {
+#DreamCards .dream-entry .date-time h1 {
   color: #10163342;
 }
 
@@ -169,8 +169,8 @@ canvas {
   overflow-y: scroll;
 }
 
-#ThoughtsCards .thoughts-entry {
-  margin-bottom: 6rem;
+#ThoughtsCards .thought-entry {
+  margin-bottom: 4rem;
 }
 
 #ThoughtsCards .date-time {

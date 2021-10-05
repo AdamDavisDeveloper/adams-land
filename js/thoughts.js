@@ -1,20 +1,29 @@
-import Data from "../thoughts-data.js";
+import thoughtsData from "../thoughts-data.js";
+import dreamsData from "../dreams-data.js";
+// HTML DOM Parents
 const AllThoughts = document.getElementById("ThoughtsCards");
+const AllDreams = document.getElementById("DreamCards");
 
-function generateEntries(data) {
-  data.reverse().forEach((entry) => {
-    const thoughtsEntry = document.createElement("div");
-    thoughtsEntry.classList.add("thoughts-entry");
-    thoughtsEntry.innerHTML = `
+function generateEntries(data, parent, type) {
+  data.reverse().forEach((ent) => {
+    const Entry = document.createElement("div");
+    Entry.classList.add(`${type}-entry`);
+    Entry.innerHTML = `
         <div class="date-time">
-        <h1>${entry.date}</h1>
+        <h1>${ent.date}</h1>
         </div>
         <div class="content">
-        <p>${entry.content}</p>
+        <p>${ent.content}</p>
         </div>
     `;
-    AllThoughts.appendChild(thoughtsEntry);
+    parent.appendChild(Entry);
   });
 }
 
-generateEntries(Data);
+// HTML CONDITIONALS
+if (AllThoughts) {
+  generateEntries(thoughtsData, AllThoughts, "thought");
+}
+if (AllDreams) {
+  generateEntries(dreamsData, AllDreams, "dream");
+}

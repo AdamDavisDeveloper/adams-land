@@ -20,7 +20,7 @@ export default [
   {
     id: 4,
     date: "Oct. 4, 2021",
-    content: `- Whenever something is morally or religiously vague, I will always go with whatever is the most beautiful.`,
+    content: `Whenever something is morally or religiously vague, I will always go with whatever is the most beautiful.`,
   },
   {
     id: 5,
