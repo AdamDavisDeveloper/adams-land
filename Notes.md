@@ -7,3 +7,8 @@ Working on my garden. Rain is falling steadily outside my open windows. I have T
 ### A dream I had Sep. 16th 21
 
 I accidentally left something on my nightstand which soaked into the handcrafted wood and basically ruined it. I tried scrubbing it really hard with paper towels for some reason but ended up chipping and tearing pieces of the wood off instead.
+
+
+## Code Snips
+
+Inverted drop shadow: box-shadow: inset 5px 5px 5px #c3c4be, inset -5px -5px 5px #eeeeee;
