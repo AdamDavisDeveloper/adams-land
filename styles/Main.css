@@ -182,6 +182,62 @@ canvas {
   letter-spacing: 0.1em;
 }
 
+#AboutMe header {
+  border-bottom: 5px solid #373b7a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#AboutMe .about-header {
+  font-size: 2rem;
+  color: #373b7a;
+  margin: 1rem;
+  margin-top: 2rem;
+}
+
+#AboutMe #AboutObject {
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 10px;
+  line-height: 150%;
+  -webkit-box-shadow: inset 5px 5px 5px #c3c4be, inset -5px -5px 5px #eeeeee;
+          box-shadow: inset 5px 5px 5px #c3c4be, inset -5px -5px 5px #eeeeee;
+}
+
+#AboutMe #AboutObject p {
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+#AboutMe #AboutObject p:not(.brace) {
+  text-indent: 14px;
+}
+
+#AboutMe #AboutInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 50vh;
+  padding-left: 5rem;
+}
+
 * {
   margin: 0;
   padding: 0;

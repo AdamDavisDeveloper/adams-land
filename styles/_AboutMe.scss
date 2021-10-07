@@ -1,0 +1,36 @@
+#AboutMe {
+  header {
+    border-bottom: 5px solid rgb(55, 59, 122);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-header {
+    font-size: 2rem;
+    color: rgb(55, 59, 122);
+    margin: 1rem;
+    margin-top: 2rem;
+  }
+  #AboutObject {
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 10px;
+    line-height: 150%;
+    box-shadow: inset 5px 5px 5px #c3c4be, inset -5px -5px 5px #eeeeee;
+    p {
+      font-family: monospace;
+      font-size: 1rem;
+      &:not(.brace) {
+        text-indent: 14px;
+      }
+    }
+  }
+  #AboutInfo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 50vh;
+    padding-left: 5rem;
+  }
+}
