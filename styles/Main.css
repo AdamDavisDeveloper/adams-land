@@ -202,24 +202,6 @@ canvas {
   margin-top: 2rem;
 }
 
-#AboutMe #AboutObject {
-  display: inline-block;
-  padding: 1rem;
-  border-radius: 10px;
-  line-height: 150%;
-  -webkit-box-shadow: inset 5px 5px 5px #c3c4be, inset -5px -5px 5px #eeeeee;
-          box-shadow: inset 5px 5px 5px #c3c4be, inset -5px -5px 5px #eeeeee;
-}
-
-#AboutMe #AboutObject p {
-  font-family: monospace;
-  font-size: 1rem;
-}
-
-#AboutMe #AboutObject p:not(.brace) {
-  text-indent: 14px;
-}
-
 #AboutMe #AboutInfo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -234,8 +216,32 @@ canvas {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 2rem;
   height: 50vh;
   padding-left: 5rem;
+}
+
+#AboutMe #AboutInfo img {
+  width: 150px;
+}
+
+#AboutMe #AboutObject {
+  display: inline-block;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  line-height: 150%;
+  -webkit-box-shadow: inset 5px 5px 5px #c3c4be, inset -5px -5px 5px #eeeeee;
+          box-shadow: inset 5px 5px 5px #c3c4be, inset -5px -5px 5px #eeeeee;
+}
+
+#AboutMe #AboutObject p {
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+#AboutMe #AboutObject p:not(.brace) {
+  text-indent: 14px;
 }
 
 * {

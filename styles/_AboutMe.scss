@@ -11,9 +11,22 @@
     margin: 1rem;
     margin-top: 2rem;
   }
+  #AboutInfo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 2rem;
+    height: 50vh;
+    padding-left: 5rem;
+    img {
+      width: 150px;
+    }
+  }
   #AboutObject {
     display: inline-block;
     padding: 1rem;
+    margin-top: 1rem;
     border-radius: 10px;
     line-height: 150%;
     box-shadow: inset 5px 5px 5px #c3c4be, inset -5px -5px 5px #eeeeee;
@@ -24,13 +37,5 @@
         text-indent: 14px;
       }
     }
-  }
-  #AboutInfo {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    height: 50vh;
-    padding-left: 5rem;
   }
 }
