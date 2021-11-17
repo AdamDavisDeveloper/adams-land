@@ -4,6 +4,7 @@
 }
 
 #AboutMe {
+  height: 100vh;
   h1 {
     font-family: "MADE Gentle";
   }
@@ -12,11 +13,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 7rem;
+    text-align: center;
+    a {
+      color: rgb(55, 59, 122);
+    }
   }
   .about-header {
     font-size: 2rem;
     color: rgb(55, 59, 122);
-    margin: 1rem;
     margin-top: 2rem;
   }
   #AboutInfo {
@@ -47,9 +52,12 @@
     p {
       font-family: monospace;
       font-size: 1rem;
-      &:not(.brace) {
-        text-indent: 14px;
-      }
+    }
+    .indent-14px {
+      text-indent: 14px;
+    }
+    .indent-28px {
+      text-indent: 28px;
     }
   }
 }

@@ -187,6 +187,10 @@ canvas {
   src: url("../fonts/MADE Gentle.otf") format("otf");
 }
 
+#AboutMe {
+  height: 100vh;
+}
+
 #AboutMe h1 {
   font-family: "MADE Gentle";
 }
@@ -202,12 +206,17 @@ canvas {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 7rem;
+  text-align: center;
+}
+
+#AboutMe header a {
+  color: #373b7a;
 }
 
 #AboutMe .about-header {
   font-size: 2rem;
   color: #373b7a;
-  margin: 1rem;
   margin-top: 2rem;
 }
 
@@ -257,8 +266,12 @@ canvas {
   font-size: 1rem;
 }
 
-#AboutMe #AboutObject p:not(.brace) {
+#AboutMe #AboutObject .indent-14px {
   text-indent: 14px;
+}
+
+#AboutMe #AboutObject .indent-28px {
+  text-indent: 28px;
 }
 
 @font-face {
