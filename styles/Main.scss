@@ -2,6 +2,11 @@
 @import "./Thoughts";
 @import "./AboutMe";
 
+@font-face {
+  font-family: "MADE Gentle";
+  src: url("../fonts/MADE\ Gentle.otf") format("otf");
+}
+
 * {
   margin: 0;
   padding: 0;

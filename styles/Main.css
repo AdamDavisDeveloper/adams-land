@@ -182,6 +182,15 @@ canvas {
   letter-spacing: 0.1em;
 }
 
+@font-face {
+  font-family: "MADE Gentle";
+  src: url("../fonts/MADE Gentle.otf") format("otf");
+}
+
+#AboutMe h1 {
+  font-family: "MADE Gentle";
+}
+
 #AboutMe header {
   border-bottom: 5px solid #373b7a;
   display: -webkit-box;
@@ -221,8 +230,16 @@ canvas {
   padding-left: 5rem;
 }
 
+#AboutMe #AboutInfo h1 {
+  color: #537bd1;
+}
+
 #AboutMe #AboutInfo img {
   width: 150px;
+  border: 2px solid #373b7a;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px #373b7a;
+          box-shadow: 3px 3px #373b7a;
 }
 
 #AboutMe #AboutObject {
@@ -242,6 +259,11 @@ canvas {
 
 #AboutMe #AboutObject p:not(.brace) {
   text-indent: 14px;
+}
+
+@font-face {
+  font-family: "MADE Gentle";
+  src: url("../fonts/MADE Gentle.otf") format("otf");
 }
 
 * {

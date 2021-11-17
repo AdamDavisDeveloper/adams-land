@@ -1,4 +1,12 @@
+@font-face {
+  font-family: "MADE Gentle";
+  src: url("../fonts/MADE\ Gentle.otf") format("otf");
+}
+
 #AboutMe {
+  h1 {
+    font-family: "MADE Gentle";
+  }
   header {
     border-bottom: 5px solid rgb(55, 59, 122);
     display: flex;
@@ -19,8 +27,14 @@
     margin-top: 2rem;
     height: 50vh;
     padding-left: 5rem;
+    h1 {
+      color: rgb(83, 123, 209);
+    }
     img {
       width: 150px;
+      border: 2px solid rgb(55, 59, 122);
+      border-radius: 10px;
+      box-shadow: 3px 3px rgb(55, 59, 122);
     }
   }
   #AboutObject {
