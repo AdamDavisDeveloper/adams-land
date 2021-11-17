@@ -295,6 +295,17 @@ canvas {
   margin-bottom: 2rem;
 }
 
+#Recordings figure {
+  margin-bottom: 6rem;
+}
+
+#Recordings figcaption {
+  color: white;
+  background: #5b754e;
+  text-align: center;
+  padding: 0.15rem 0rem;
+}
+
 #Recordings h1 {
   color: white;
   margin-bottom: 0.5rem;
