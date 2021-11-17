@@ -274,6 +274,64 @@ canvas {
   text-indent: 28px;
 }
 
+#Recordings {
+  font-family: "Comfortaa", cursive;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../img/flower-grass.jpg);
+}
+
+#Recordings header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 0rem;
+  margin-bottom: 2rem;
+}
+
+#Recordings h1 {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+#Recordings a {
+  color: lemonchiffon;
+}
+
+#Recordings .text-bg-box {
+  background: #5b754e;
+  padding: 0.75rem 4rem;
+  border: 2px solid #cfcfcf;
+}
+
+#Recordings .t-align-center {
+  text-align: center;
+}
+
+#Players {
+  width: 70%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 @font-face {
   font-family: "MADE Gentle";
   src: url("../fonts/MADE Gentle.otf") format("otf");
