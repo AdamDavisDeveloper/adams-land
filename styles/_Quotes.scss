@@ -1,0 +1,39 @@
+:root {
+    --font-soft-black: color: #2D2D2D;
+}
+#Quotes {
+  font-family: "Caveat", cursive;
+  width: 100%;
+  background: linear-gradient(180deg, #37b8ca 25.52%, #10255a 86.98%);
+  background: lemonchiffon;
+  color: var(--font-soft-black);
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3rem;
+    img {
+      border-radius: 50%;
+      border: 5px solid rgb(80, 193, 201);
+      height: 30%;
+      width: 30%;
+    }
+    h1 {
+      font-size: 4rem;
+      transform: translateY(-100px);
+    }
+  }
+}
+
+#SayingsColumn {
+  background: url(../img/paper-bg.jpg);
+  width: 60%;
+  margin: auto;
+  padding: 1.5rem;
+  padding-bottom: 3rem;
+  color: var(--font-soft-black);
+  p {
+    font-size: 2rem;
+  }
+}

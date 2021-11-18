@@ -343,6 +343,57 @@ canvas {
           flex-direction: column;
 }
 
+#Quotes {
+  font-family: "Caveat", cursive;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(25.52%, #37b8ca), color-stop(86.98%, #10255a));
+  background: linear-gradient(180deg, #37b8ca 25.52%, #10255a 86.98%);
+  background: lemonchiffon;
+}
+
+#Quotes header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 3rem;
+}
+
+#Quotes header img {
+  border-radius: 50%;
+  border: 5px solid #50c1c9;
+  height: 30%;
+  width: 30%;
+}
+
+#Quotes header h1 {
+  color: #1a1a1a;
+  font-size: 4rem;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+}
+
+#SayingsColumn {
+  background: url(../img/paper-bg.jpg);
+  width: 60%;
+  margin: auto;
+  height: 100vh;
+  padding: 1.5rem;
+}
+
+#SayingsColumn p {
+  font-size: 2rem;
+}
+
 @font-face {
   font-family: "MADE Gentle";
   src: url("../fonts/MADE Gentle.otf") format("otf");
