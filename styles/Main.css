@@ -4,25 +4,17 @@
   top: 40px;
   left: 0;
 }
-
 #Return .home-button {
   height: 35px;
   width: 80px;
   background: white;
   border-radius: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 0rem 0.65rem;
   margin-left: 2rem;
 }
-
 #Return .home-button img {
   height: 25px;
 }
@@ -31,42 +23,25 @@
   padding: 3rem;
   position: relative;
 }
-
 #Underland .title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 #Underland .title h1 {
   color: white;
   font-size: 3rem;
   letter-spacing: 0.2em;
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.25);
 }
-
 #Underland .subtitle {
   color: white;
 }
-
 #Underland .subtitle {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 #Underland .subtitle h1 {
   letter-spacing: 0.2em;
 }
@@ -78,26 +53,21 @@
   top: 30vh;
   padding-bottom: 10rem;
 }
-
 #DreamCards .dream-entry {
   width: 100%;
   margin-bottom: 6rem;
   background: white;
   padding: 1rem;
-  -webkit-box-shadow: -4px 0px 6px rgba(255, 255, 255, 0.5), 4px 4px 6px rgba(255, 255, 255, 0.5);
-          box-shadow: -4px 0px 6px rgba(255, 255, 255, 0.5), 4px 4px 6px rgba(255, 255, 255, 0.5);
+  box-shadow: -4px 0px 6px rgba(255, 255, 255, 0.5), 4px 4px 6px rgba(255, 255, 255, 0.5);
   border-radius: 20px;
 }
-
 #DreamCards .dream-entry p {
   line-height: 20px;
   letter-spacing: 0.1em;
 }
-
 #DreamCards .dream-entry .date-time {
   margin-bottom: 1rem;
 }
-
 #DreamCards .dream-entry .date-time h1 {
   color: #10163342;
 }
@@ -124,38 +94,25 @@ canvas {
   min-height: 100vh;
   background: linear-gradient(245.53deg, rgba(249, 182, 162, 0) -37.22%, #f9b6a2 100.63%);
 }
-
 #Thoughts .absolute-fern {
   position: absolute;
   bottom: -20px;
   right: 0;
   z-index: -1;
 }
-
 #Thoughts .header,
 #Thoughts .subtitle {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   color: #313131;
   letter-spacing: 0.2em;
 }
-
 #Thoughts .header span,
 #Thoughts .subtitle span {
   font-size: 3rem;
 }
-
 #Thoughts .header a,
 #Thoughts .subtitle a {
   color: #2f4d70;
@@ -168,15 +125,12 @@ canvas {
   margin-top: 3rem;
   overflow-y: scroll;
 }
-
 #ThoughtsCards .thought-entry {
   margin-bottom: 4rem;
 }
-
 #ThoughtsCards .date-time {
   margin-bottom: 1rem;
 }
-
 #ThoughtsCards .content p {
   line-height: 20px;
   letter-spacing: 0.1em;
@@ -186,90 +140,61 @@ canvas {
   font-family: "MADE Gentle";
   src: url("../fonts/MADE Gentle.otf") format("otf");
 }
-
 #AboutMe {
   height: 100vh;
 }
-
 #AboutMe h1 {
   font-family: "MADE Gentle";
 }
-
 #AboutMe header {
   border-bottom: 5px solid #373b7a;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 7rem;
   text-align: center;
 }
-
 #AboutMe header a {
   color: #373b7a;
 }
-
 #AboutMe .about-header {
   font-size: 2rem;
   color: #373b7a;
   margin-top: 2rem;
 }
-
 #AboutMe #AboutInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
   margin-top: 2rem;
   height: 50vh;
   padding-left: 5rem;
 }
-
 #AboutMe #AboutInfo h1 {
   color: #537bd1;
 }
-
 #AboutMe #AboutInfo img {
   width: 150px;
   border: 2px solid #373b7a;
   border-radius: 10px;
-  -webkit-box-shadow: 3px 3px #373b7a;
-          box-shadow: 3px 3px #373b7a;
+  box-shadow: 3px 3px #373b7a;
 }
-
 #AboutMe #AboutObject {
   display: inline-block;
   padding: 1rem;
   margin-top: 1rem;
   border-radius: 10px;
   line-height: 150%;
-  -webkit-box-shadow: inset 5px 5px 5px #c3c4be, inset -5px -5px 5px #eeeeee;
-          box-shadow: inset 5px 5px 5px #c3c4be, inset -5px -5px 5px #eeeeee;
+  box-shadow: inset 5px 5px 5px #c3c4be, inset -5px -5px 5px #eeeeee;
 }
-
 #AboutMe #AboutObject p {
   font-family: monospace;
   font-size: 1rem;
 }
-
 #AboutMe #AboutObject .indent-14px {
   text-indent: 14px;
 }
-
 #AboutMe #AboutObject .indent-28px {
   text-indent: 28px;
 }
@@ -280,47 +205,34 @@ canvas {
   width: 100%;
   background-image: url(../img/flower-grass.jpg);
 }
-
 #Recordings header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   padding: 3rem 0rem;
   margin-bottom: 2rem;
 }
-
 #Recordings figure {
   margin-bottom: 6rem;
 }
-
 #Recordings figcaption {
   color: white;
   background: #5b754e;
   text-align: center;
   padding: 0.15rem 0rem;
 }
-
 #Recordings h1 {
   color: white;
   margin-bottom: 0.5rem;
 }
-
 #Recordings a {
   color: lemonchiffon;
 }
-
 #Recordings .text-bg-box {
   background: #5b754e;
   padding: 0.75rem 4rem;
   border: 2px solid #cfcfcf;
 }
-
 #Recordings .t-align-center {
   text-align: center;
 }
@@ -328,82 +240,71 @@ canvas {
 #Players {
   width: 70%;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+:root {
+  --font-soft-black: #2d2d2d;
 }
 
 #Quotes {
   font-family: "Caveat", cursive;
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(25.52%, #37b8ca), color-stop(86.98%, #10255a));
+  padding-bottom: 4rem;
   background: linear-gradient(180deg, #37b8ca 25.52%, #10255a 86.98%);
   background: lemonchiffon;
+  color: var(--font-soft-black);
 }
-
 #Quotes header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding-top: 3rem;
 }
-
 #Quotes header img {
   border-radius: 50%;
   border: 5px solid #50c1c9;
   height: 30%;
   width: 30%;
 }
-
 #Quotes header h1 {
-  color: #1a1a1a;
   font-size: 4rem;
-  -webkit-transform: translateY(-100px);
-          transform: translateY(-100px);
+  transform: translateY(-100px);
+}
+#Quotes header a {
+  color: var(--font-soft-black);
+}
+#Quotes header a p {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
 }
 
 #SayingsColumn {
   background: url(../img/paper-bg.jpg);
+  box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.25);
   width: 60%;
   margin: auto;
-  height: 100vh;
   padding: 1.5rem;
+  padding-bottom: 3rem;
+  color: var(--font-soft-black);
 }
-
 #SayingsColumn p {
   font-size: 2rem;
+  margin-bottom: 5rem;
 }
 
 @font-face {
   font-family: "MADE Gentle";
   src: url("../fonts/MADE Gentle.otf") format("otf");
 }
-
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -460,34 +361,24 @@ li {
 }
 
 #Header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  align-items: center;
 }
-
 #Header h1 {
   background: -webkit-linear-gradient(#c58888, #db87cb);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 #Header span {
   margin: 0rem 0.25rem;
 }
-
 #Header a {
   color: black;
   cursor: pointer;
   margin-left: 1rem;
 }
-
 #Header .current-version {
   border-bottom: 1px solid #dddddd;
 }
@@ -501,15 +392,9 @@ li {
 
 #StickyFooter {
   padding: 0.5rem 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-end;
+  align-items: center;
   position: -webkit-sticky;
   position: sticky;
   bottom: 0;
@@ -527,17 +412,14 @@ li {
   border-radius: 5px;
   width: 22rem;
 }
-
 #Directory .leaves {
   position: absolute;
   top: -22px;
   left: 10px;
 }
-
 #Directory ul {
   background: white;
 }
-
 #Directory ul li {
   margin: 0.5rem 0rem;
   background: -webkit-linear-gradient(#c58888, #db87cb);
@@ -546,8 +428,6 @@ li {
   -webkit-text-fill-color: transparent;
   list-style: none;
 }
-
 #Directory ul li:hover {
   text-decoration: underline;
-}
-/*# sourceMappingURL=Main.css.map */
+}/*# sourceMappingURL=Main.css.map */
