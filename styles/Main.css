@@ -296,6 +296,12 @@ canvas {
   font-size: 2rem;
   margin-bottom: 5rem;
 }
+#SayingsColumn .content-tag {
+  margin-bottom: 1rem;
+}
+#SayingsColumn .author-tag {
+  margin-top: 1rem;
+}
 
 @font-face {
   font-family: "MADE Gentle";
