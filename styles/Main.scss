@@ -62,7 +62,7 @@ li {
 	display: flex;
 	flex-direction: row;
 	color: rgb(44, 44, 44);
-	height: 100vh;
+	height: 90vh;
 }
 
 #Header {
@@ -107,6 +107,7 @@ li {
 
 #LandingLeft {
 	padding: 3rem;
+	padding-right: 0;
 	flex: 1;
 }
 
