@@ -5,19 +5,19 @@
 @import "./Quotes";
 
 @font-face {
-  font-family: "MADE Gentle";
-  src: url("../fonts/MADE\ Gentle.otf") format("otf");
+	font-family: "MADE Gentle";
+	src: url("../fonts/MADE\ Gentle.otf") format("otf");
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 html {
-  font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
+	font-family: "Poppins", sans-serif;
+	overflow-x: hidden;
 }
 
 h1,
@@ -26,115 +26,129 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 400;
+	font-weight: 400;
 }
 
 h1 {
-  font-size: 1.5rem;
+	font-size: 1.5rem;
 }
 h2 {
-  font-size: 1rem;
+	font-size: 1rem;
 }
 h3 {
-  font-size: 0.85rem;
+	font-size: 0.85rem;
 }
 h4 {
-  font-size: 0.75rem;
+	font-size: 0.75rem;
 }
 h5 {
-  font-size: 0.5rem;
+	font-size: 0.5rem;
 }
 p {
-  font-size: 0.85rem;
+	font-size: 0.85rem;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 li {
-  font-size: 1rem;
-  cursor: pointer;
+	font-size: 1rem;
+	cursor: pointer;
 }
 
 //Landing Page styles
 #LandingPage {
-  height: 100vh;
-  padding: 3rem;
-  color: rgb(44, 44, 44);
+	display: flex;
+	flex-direction: row;
+	color: rgb(44, 44, 44);
+	height: 100vh;
 }
 
 #Header {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  h1 {
-    background: -webkit-linear-gradient(rgb(197, 136, 136), rgb(219, 135, 203));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  span {
-    margin: 0rem 0.25rem;
-  }
-  a {
-    color: black;
-    cursor: pointer;
-    margin-left: 1rem;
-  }
-  .current-version {
-    border-bottom: 1px solid rgb(221, 221, 221);
-  }
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	h1 {
+		background: -webkit-linear-gradient(rgb(197, 136, 136), rgb(219, 135, 203));
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	span {
+		margin: 0rem 0.25rem;
+	}
+	a {
+		color: black;
+		cursor: pointer;
+		margin-left: 1rem;
+	}
+	.current-version {
+		border-bottom: 1px solid rgb(221, 221, 221);
+	}
 }
 
 #Subheader {
-  color: rgb(44, 44, 44);
-  padding-left: 1.5rem;
-  max-width: 40%;
-  margin-bottom: 5rem;
+	color: rgb(44, 44, 44);
+	padding-left: 1.5rem;
+	max-width: 70%;
+	margin-bottom: 5rem;
 }
 
 #StickyFooter {
-  padding: 0.5rem 1rem;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  position: sticky;
-  bottom: 0;
-  left: 0;
+	padding: 0.5rem 1rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position: sticky;
+	bottom: 0;
+	left: 0;
+}
+
+#LandingLeft {
+	padding: 3rem;
+	flex: 1;
+}
+
+#LandingRight {
+	display: flex;
+	justify-content: center;
+	flex: 1;
+	height: 100vh;
+	background: url(../img/ocean.png);
 }
 
 //Directory styles
 #Directory {
-  position: relative;
-  margin-left: 1.5rem;
-  display: inline-block;
-  padding: 1rem;
-  border: 1.5px solid rgb(44, 44, 44);
-  border-bottom: 2.5px solid rgb(44, 44, 44);
-  border-left: 2.5px solid rgb(44, 44, 44);
-  border-radius: 5px;
-  width: 22rem;
-  .leaves {
-    position: absolute;
-    top: -22px;
-    left: 10px;
-  }
-  ul {
-    background: white;
-    li {
-      margin: 0.5rem 0rem;
-      background: -webkit-linear-gradient(
-        rgb(197, 136, 136),
-        rgb(219, 135, 203)
-      );
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      list-style: none;
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
+	position: relative;
+	margin-left: 1.5rem;
+	display: inline-block;
+	padding: 1rem;
+	border: 1.5px solid rgb(44, 44, 44);
+	border-bottom: 2.5px solid rgb(44, 44, 44);
+	border-left: 2.5px solid rgb(44, 44, 44);
+	border-radius: 5px;
+	width: 22rem;
+	.leaves {
+		position: absolute;
+		top: -22px;
+		left: 10px;
+	}
+	ul {
+		background: white;
+		li {
+			margin: 0.5rem 0rem;
+			background: -webkit-linear-gradient(
+				rgb(197, 136, 136),
+				rgb(219, 135, 203)
+			);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			list-style: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
 }

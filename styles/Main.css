@@ -355,9 +355,10 @@ li {
 }
 
 #LandingPage {
-  height: 100vh;
-  padding: 3rem;
+  display: flex;
+  flex-direction: row;
   color: #2c2c2c;
+  height: 100vh;
 }
 
 #Header {
@@ -386,7 +387,7 @@ li {
 #Subheader {
   color: #2c2c2c;
   padding-left: 1.5rem;
-  max-width: 40%;
+  max-width: 70%;
   margin-bottom: 5rem;
 }
 
@@ -399,6 +400,19 @@ li {
   position: sticky;
   bottom: 0;
   left: 0;
+}
+
+#LandingLeft {
+  padding: 3rem;
+  flex: 1;
+}
+
+#LandingRight {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  height: 100vh;
+  background: url(../img/ocean.png);
 }
 
 #Directory {
