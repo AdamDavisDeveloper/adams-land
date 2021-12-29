@@ -32,4 +32,14 @@ export default [
 		date: "Oct. 4, 2021",
 		content: `That strange feeling of hyper-déjà vu where you suddenly feel like you’re living a dream you had 10 years ago.`,
 	},
+	{
+		id: 7,
+		date: "Dec. 22, 2021",
+		content: `It's cool that vaping can have social benefits. As an introverted-extrovert you can escape a tiring social environment to a private setting without seeming weird. And you can join the smoking crowd when they step outside for ten minutes and a have new conversations you wouldn't have had otherwise`,
+	},
+	{
+		id: 8,
+		date: "Dec. 24, 2021",
+		content: `I really like having my bedroom windows opened and reyling on nature to light my space. Watching the lighting fade darker then lighter again a few seconds later because clouds are soaring high above me is really neat.`,
+	},
 ];
