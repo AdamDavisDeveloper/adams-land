@@ -303,9 +303,78 @@ canvas {
   margin-top: 1rem;
 }
 
+#Photos {
+  height: 100vh;
+  width: 100%;
+}
+#Photos header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 70%;
+  padding: 3rem 0rem;
+  margin: auto;
+}
+#Photos header h1 {
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+#PhotoHeaderUnderline {
+  height: 7px;
+  width: 100%;
+  background: linear-gradient(90deg, #5d81dd 0%, #37efef 100%);
+}
+
+#VolumesGrid {
+  width: 70%;
+  margin: auto;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+#VolumesGrid .volume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12rem;
+  width: 12rem;
+  border-radius: 10px;
+  background: #168194;
+  text-align: left;
+  padding: 0rem 1rem;
+  cursor: pointer;
+}
+#VolumesGrid .volume span {
+  font-size: 2rem;
+  font-weight: 100;
+  color: white;
+}
+#VolumesGrid .vol-one {
+  background: url(../img/volume-covers/city-square.png);
+}
+#VolumesGrid .vol-two {
+  background: url(../img/volume-covers/forgotten-things-square.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#VolumesGrid .vol-three {
+  background: url(../img/volume-covers/friends-adventure-square.png);
+}
+
 @font-face {
   font-family: "MADE Gentle";
   src: url("../fonts/MADE Gentle.otf") format("otf");
+}
+@font-face {
+  font-family: "Sansation-Light";
+  src: url("../fonts/Sansation-Light.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Shree Devanagari 714";
+  src: url("../fonts/Shree Devanagari 714.ttf") format("ttf");
 }
 * {
   margin: 0;

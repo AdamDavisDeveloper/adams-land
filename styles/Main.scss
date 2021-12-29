@@ -3,10 +3,19 @@
 @import "./AboutMe";
 @import "./Recordings";
 @import "./Quotes";
+@import "./Photos";
 
 @font-face {
 	font-family: "MADE Gentle";
 	src: url("../fonts/MADE\ Gentle.otf") format("otf");
+}
+@font-face {
+	font-family: "Sansation-Light";
+	src: url("../fonts/Sansation-Light.ttf") format("ttf");
+}
+@font-face {
+	font-family: "Shree Devanagari 714";
+	src: url("../fonts/Shree\ Devanagari\ 714.ttf") format("ttf");
 }
 
 * {
