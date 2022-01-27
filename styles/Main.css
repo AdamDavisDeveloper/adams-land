@@ -136,15 +136,9 @@ canvas {
   letter-spacing: 0.1em;
 }
 
-@font-face {
-  font-family: "MADE Gentle";
-  src: url("../fonts/MADE Gentle.otf") format("otf");
-}
 #AboutMe {
   height: 100vh;
-}
-#AboutMe h1 {
-  font-family: "MADE Gentle";
+  font-family: "Questrial", sans-serif;
 }
 #AboutMe header {
   border-bottom: 5px solid #373b7a;
@@ -160,7 +154,8 @@ canvas {
 #AboutMe .about-header {
   font-size: 2rem;
   color: #373b7a;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
 }
 #AboutMe #AboutInfo {
   display: flex;
@@ -365,10 +360,6 @@ canvas {
   background: url(../img/volume-covers/friends-adventure-square.png);
 }
 
-@font-face {
-  font-family: "MADE Gentle";
-  src: url("../fonts/MADE Gentle.otf") format("otf");
-}
 @font-face {
   font-family: "Sansation-Light";
   src: url("../fonts/Sansation-Light.ttf") format("ttf");
