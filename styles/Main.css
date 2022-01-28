@@ -321,6 +321,12 @@ canvas {
   font-family: "Lato", sans-serif;
   font-size: 3rem;
 }
+#Photos header .flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
 
 #PhotoHeaderUnderline {
   height: 7px;
