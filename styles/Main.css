@@ -111,10 +111,16 @@ canvas {
 }
 #Thoughts .header span,
 #Thoughts .subtitle span {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+#Thoughts .header h1,
+#Thoughts .subtitle h1 {
   font-size: 3rem;
 }
 #Thoughts .header a,
 #Thoughts .subtitle a {
+  margin-top: 1rem;
   color: #2f4d70;
   cursor: pointer;
 }
