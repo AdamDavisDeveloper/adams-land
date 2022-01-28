@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/styles/Main.css" />
+		<link rel="stylesheet" href="dreams.css" />
+		<title>Underland💤</title>
+	</head>
+	<body>
+		<div id="Underland">
+			<div id="particles-js"></div>
+			<a id="Return" href="/">
+				<div class="home-button">
+					<img src="/img/arrow-left.png" alt="left arrow" />
+					<img src="/img/home-icon.png" alt="home" />
+				</div>
+			</a>
+			<div class="title">
+				<h1>Underland</h1>
+			</div>
+			<div class="subtitle">
+				<h1>dream journal</h1>
+			</div>
+			<!-- Dream Cards -->
+			<div id="DreamCards"></div>
+		</div>
+
+		<!-- JS -->
+		<script type="application/json" src="/dreams-data.js"></script>
+		<script type="module" src="/js/data2dom.js"></script>
+		<!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+		<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+		<script src="/js/particles.js"></script>
+	</body>
+</html>
