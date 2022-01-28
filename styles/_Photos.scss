@@ -1,4 +1,8 @@
-#Photos {
+// Styles for all Photos pages
+#Photos,
+#ForgottenThings,
+#FriendsAndAdventures,
+#DowntownAtlanta {
 	height: 100vh;
 	width: 100%;
 	header {
@@ -12,12 +16,29 @@
 		h1 {
 			font-family: "Lato", sans-serif;
 			font-size: 3rem;
+			font-weight: 200;
 		}
 		.flex-between {
 			display: flex;
 			justify-content: space-between;
 			align-items: flex-end;
 			width: 100%;
+		}
+		#GoBack {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.all-volumes-button {
+			width: 5rem;
+			padding: 0.5rem 0rem;
+			font-size: 1rem;
+			background: #faabab;
+			border: none;
+			border-radius: 10px;
+			color: white;
+			margin-right: 1rem;
+			cursor: pointer;
 		}
 	}
 }
@@ -33,7 +54,7 @@
 	margin: auto;
 	margin-top: 2rem;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
 	justify-items: center;
 
 	.volume {
@@ -46,6 +67,7 @@
 		background: rgb(22, 129, 148);
 		text-align: left;
 		padding: 0rem 1rem;
+		margin-bottom: 2rem;
 		cursor: pointer;
 		span {
 			font-family: "Exo 2", sans-serif;
