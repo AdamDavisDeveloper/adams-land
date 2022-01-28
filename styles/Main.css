@@ -463,6 +463,12 @@ li {
   max-width: 70%;
   margin-bottom: 5rem;
 }
+#Subheader h2:nth-child(2) {
+  margin-top: 0.85rem;
+}
+#Subheader h2:nth-child(2) i {
+  color: rgba(84, 172, 86, 0.616);
+}
 
 #StickyFooter {
   padding: 0.5rem 1rem;
