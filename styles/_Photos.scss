@@ -50,6 +50,7 @@
 		margin: auto;
 		row-gap: 5rem;
 		column-gap: 3rem;
+		padding-bottom: 20vh;
 	}
 	.gallery-img {
 		display: flex;
@@ -75,6 +76,9 @@
 		padding-top: 0.5rem;
 		a {
 			color: rgb(151, 98, 151);
+		}
+		p {
+			font-size: 1rem;
 		}
 	}
 }

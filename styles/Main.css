@@ -375,6 +375,7 @@ canvas {
   row-gap: 5rem;
   -moz-column-gap: 3rem;
        column-gap: 3rem;
+  padding-bottom: 20vh;
 }
 #Photos .gallery-img,
 #ForgottenThings .gallery-img,
@@ -411,6 +412,12 @@ canvas {
 #FriendsAndAdventures .photo-caption a,
 #DowntownAtlanta .photo-caption a {
   color: #976297;
+}
+#Photos .photo-caption p,
+#ForgottenThings .photo-caption p,
+#FriendsAndAdventures .photo-caption p,
+#DowntownAtlanta .photo-caption p {
+  font-size: 1rem;
 }
 
 #PhotoHeaderUnderline {

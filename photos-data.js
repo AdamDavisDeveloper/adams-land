@@ -14,6 +14,24 @@ export default [
 				date: "",
 				caption: "so nice",
 			},
+			{
+				name: "tower",
+				path: "/img/downtown-atl/tower.png",
+				date: "",
+				caption: "very foggy day!",
+			},
+			{
+				name: "city view",
+				path: "/img/downtown-atl/city-view.png",
+				date: "",
+				caption: "woah ✨ what a view",
+			},
+			{
+				name: "rooftop",
+				path: "/img/downtown-atl/rooftop.png",
+				date: "",
+				caption: "rooftop moon <3",
+			},
 		],
 	},
 	{
