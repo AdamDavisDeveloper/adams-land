@@ -79,10 +79,34 @@ export default [
 		volume: "friends-and-adventures",
 		photos: [
 			{
-				name: "",
-				path: "/img/",
+				name: "wedding dance",
+				path: "/img/friends-and-adventures/wedding-dance.png",
 				date: "",
-				caption: "",
+				caption: "dancing at philip and danielle's wedding",
+			},
+			{
+				name: "tree art",
+				path: "/img/friends-and-adventures/tree-sign-art.png",
+				date: "",
+				caption: "cool tree art in plano tx",
+			},
+			{
+				name: "rock show at emo nite",
+				path: "/img/friends-and-adventures/friends-band-michigan.png",
+				date: "",
+				caption: `new years eve "emo nite" ~ caleb's band`,
+			},
+			{
+				name: "chalk bathroom at emo nite",
+				path: "/img/friends-and-adventures/chalk-bathroom.png",
+				date: "",
+				caption: `awesome chalk bathroom at "emo nite"`,
+			},
+			{
+				name: "caleb's music studio",
+				path: "/img/friends-and-adventures/calebs-studio-2022.png",
+				date: "",
+				caption: `chilling at caleb's music studio with him and caroline`,
 			},
 		],
 	},
