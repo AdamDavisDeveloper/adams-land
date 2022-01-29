@@ -26,5 +26,13 @@ function generatePhotos(data) {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-	generatePhotos(getVolumeImages("downtown-atl"));
+	if (document.getElementById("DowntownAtlanta")) {
+		generatePhotos(getVolumeImages("downtown-atl"));
+	}
+	if (document.getElementById("ForgottenThings")) {
+		generatePhotos(getVolumeImages("forgotten-things"));
+	}
+	if (document.getElementById("FriendsAndAdventures")) {
+		generatePhotos(getVolumeImages("friends-and-adventures"));
+	}
 });

@@ -6,7 +6,7 @@ export default [
 				name: "train sunset",
 				path: "/img/downtown-atl/train-sunset.png",
 				date: "",
-				caption: "on my way home from work :-)",
+				caption: "train ride home from work :-)",
 			},
 			{
 				name: "red light sunset",
@@ -32,16 +32,46 @@ export default [
 				date: "",
 				caption: "rooftop moon <3",
 			},
+			{
+				name: "sunset",
+				path: "/img/downtown-atl/sunset-over-town.png",
+				date: "",
+				caption: "sunset from 37 stories",
+			},
+			{
+				name: "christmas airport",
+				path: "/img/downtown-atl/metro-airport.png",
+				date: "",
+				caption: "atl metro airport 🎄 christmas",
+			},
 		],
 	},
 	{
 		volume: "forgotten-things",
 		photos: [
 			{
-				name: "cup on kioske",
-				path: "/img/cup-onkiosk-1",
+				name: "cup on kioske one",
+				path: "/img/forgotten-things/cup-1.png",
 				date: "",
-				caption: "",
+				caption: "cup - first find",
+			},
+			{
+				name: "cup on kioske two",
+				path: "/img/forgotten-things/cup-2.png",
+				date: "",
+				caption: "cup two - naomi",
+			},
+			{
+				name: "sticker on station platform",
+				path: "/img/forgotten-things/sticker-1.png",
+				date: "",
+				caption: "station platform lost sticker",
+			},
+			{
+				name: "cup on kioske one",
+				path: "/img/forgotten-things/cup-3.png",
+				date: "",
+				caption: "box - henry",
 			},
 		],
 	},
