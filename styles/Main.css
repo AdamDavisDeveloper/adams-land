@@ -362,6 +362,30 @@ canvas {
   margin-right: 1rem;
   cursor: pointer;
 }
+#Photos .gallery,
+#ForgottenThings .gallery,
+#FriendsAndAdventures .gallery,
+#DowntownAtlanta .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  padding: 2rem 0rem;
+  width: 80%;
+  margin: auto;
+  row-gap: 5rem;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+}
+#Photos .gallery-img img,
+#ForgottenThings .gallery-img img,
+#FriendsAndAdventures .gallery-img img,
+#DowntownAtlanta .gallery-img img {
+  width: 80%;
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* Shadow */
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 40px rgba(0, 0, 0, 0.2);
+}
 
 #PhotoHeaderUnderline {
   height: 7px;
@@ -408,6 +432,16 @@ canvas {
   background: url(../img/volume-covers/friends-adventure-square.png);
 }
 
+@media screen and (max-width: 415px) {
+  .gallery {
+    width: 100%;
+  }
+
+  .gallery-info p,
+.gallery-info a {
+    margin: 0rem 1rem;
+  }
+}
 @font-face {
   font-family: "Sansation-Light";
   src: url("../fonts/Sansation-Light.ttf") format("ttf");

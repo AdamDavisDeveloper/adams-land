@@ -41,6 +41,27 @@
 			cursor: pointer;
 		}
 	}
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+		padding: 2rem 0rem;
+		width: 80%;
+		margin: auto;
+		row-gap: 5rem;
+		column-gap: 3rem;
+	}
+	.gallery-img {
+		img {
+			width: 80%;
+			height: 80%;
+			object-fit: cover;
+			/* Shadow */
+			-webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2),
+				0px 20px 40px rgba(0, 0, 0, 0.2);
+			box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2),
+				0px 20px 40px rgba(0, 0, 0, 0.2);
+		}
+	}
 }
 
 #PhotoHeaderUnderline {
@@ -86,5 +107,17 @@
 	}
 	.vol-three {
 		background: url(../img/volume-covers/friends-adventure-square.png);
+	}
+}
+
+//Media Queries
+
+@media screen and (max-width: 415px) {
+	.gallery {
+		width: 100%;
+	}
+	.gallery-info p,
+	.gallery-info a {
+		margin: 0rem 1rem;
 	}
 }
