@@ -369,22 +369,48 @@ canvas {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   padding: 2rem 0rem;
+  justify-items: center;
   width: 80%;
   margin: auto;
   row-gap: 5rem;
   -moz-column-gap: 3rem;
        column-gap: 3rem;
 }
+#Photos .gallery-img,
+#ForgottenThings .gallery-img,
+#FriendsAndAdventures .gallery-img,
+#DowntownAtlanta .gallery-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 #Photos .gallery-img img,
 #ForgottenThings .gallery-img img,
 #FriendsAndAdventures .gallery-img img,
 #DowntownAtlanta .gallery-img img {
-  width: 80%;
-  height: 80%;
+  width: 70%;
+  height: 70%;
   -o-object-fit: cover;
      object-fit: cover;
   /* Shadow */
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 40px rgba(0, 0, 0, 0.2);
+}
+#Photos .photo-caption,
+#ForgottenThings .photo-caption,
+#FriendsAndAdventures .photo-caption,
+#DowntownAtlanta .photo-caption {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 70%;
+  padding-top: 0.5rem;
+}
+#Photos .photo-caption a,
+#ForgottenThings .photo-caption a,
+#FriendsAndAdventures .photo-caption a,
+#DowntownAtlanta .photo-caption a {
+  color: #976297;
 }
 
 #PhotoHeaderUnderline {

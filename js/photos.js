@@ -1,5 +1,7 @@
 import data from "../photos-data.js";
 
+const currentURL = window.location.href;
+
 function getVolumeImages(volume) {
 	return data.filter((img) => img.volume === volume)[0];
 }
@@ -12,8 +14,12 @@ function generatePhotos(data) {
 		const galleryImg = document.createElement("div");
 		galleryImg.classList.add("gallery-img");
 		galleryImg.innerHTML = `
-   			<img src=${photo.path || ""}></img>
-			<p>${photo.caption || ""}</p>
+			<img src=${photo.path || ""}></img>
+			<div class="photo-caption">
+				<a href=${photo.path}>
+					<p>${photo.caption || ""}</p>
+				</a>
+			</div>
 		`;
 		gallery.appendChild(galleryImg);
 	});
