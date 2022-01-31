@@ -633,4 +633,16 @@ li {
 }
 #Directory ul li:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 882px) {
+  #LandingRight {
+    display: none;
+  }
+}
+@media screen and (max-width: 470px) {
+  #LandingLeft {
+    padding: 1rem;
+    padding-top: 2rem;
+  }
 }/*# sourceMappingURL=Main.css.map */
