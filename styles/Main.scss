@@ -164,3 +164,25 @@ li {
 		}
 	}
 }
+
+// media styles
+
+@media screen and (max-width: 882px) {
+	#LandingRight {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 470px) {
+	#LandingLeft {
+		padding: 1rem;
+		padding-top: 2rem;
+	}
+}
+
+@media screen and (max-width: 418px) {
+	#LandingLeft {
+		padding: 1rem;
+		padding-top: 2rem;
+	}
+}
