@@ -77,6 +77,12 @@ export default [
 				date: ``,
 				caption: `box - henry`,
 			},
+			{
+				name: `flask cup at marta`,
+				path: `${forgottenThingsPath}frita.png`,
+				date: ``,
+				caption: `hydroflask - frita`,
+			},
 		],
 	},
 	{
