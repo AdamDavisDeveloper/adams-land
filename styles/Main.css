@@ -307,14 +307,16 @@ canvas {
 #Photos,
 #ForgottenThings,
 #FriendsAndAdventures,
-#DowntownAtlanta {
+#DowntownAtlanta,
+#Photography {
   height: 100vh;
   width: 100%;
 }
 #Photos header,
 #ForgottenThings header,
 #FriendsAndAdventures header,
-#DowntownAtlanta header {
+#DowntownAtlanta header,
+#Photography header {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -326,7 +328,8 @@ canvas {
 #Photos header h1,
 #ForgottenThings header h1,
 #FriendsAndAdventures header h1,
-#DowntownAtlanta header h1 {
+#DowntownAtlanta header h1,
+#Photography header h1 {
   font-family: "Lato", sans-serif;
   font-size: 3rem;
   font-weight: 200;
@@ -334,7 +337,8 @@ canvas {
 #Photos header .flex-between,
 #ForgottenThings header .flex-between,
 #FriendsAndAdventures header .flex-between,
-#DowntownAtlanta header .flex-between {
+#DowntownAtlanta header .flex-between,
+#Photography header .flex-between {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -343,7 +347,8 @@ canvas {
 #Photos header #GoBack,
 #ForgottenThings header #GoBack,
 #FriendsAndAdventures header #GoBack,
-#DowntownAtlanta header #GoBack {
+#DowntownAtlanta header #GoBack,
+#Photography header #GoBack {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -351,7 +356,8 @@ canvas {
 #Photos header .all-volumes-button,
 #ForgottenThings header .all-volumes-button,
 #FriendsAndAdventures header .all-volumes-button,
-#DowntownAtlanta header .all-volumes-button {
+#DowntownAtlanta header .all-volumes-button,
+#Photography header .all-volumes-button {
   width: 5rem;
   padding: 0.5rem 0rem;
   font-size: 1rem;
@@ -365,7 +371,8 @@ canvas {
 #Photos .gallery,
 #ForgottenThings .gallery,
 #FriendsAndAdventures .gallery,
-#DowntownAtlanta .gallery {
+#DowntownAtlanta .gallery,
+#Photography .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   padding: 2rem 0rem;
@@ -380,7 +387,8 @@ canvas {
 #Photos .gallery-img,
 #ForgottenThings .gallery-img,
 #FriendsAndAdventures .gallery-img,
-#DowntownAtlanta .gallery-img {
+#DowntownAtlanta .gallery-img,
+#Photography .gallery-img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -389,7 +397,8 @@ canvas {
 #Photos .gallery-img img,
 #ForgottenThings .gallery-img img,
 #FriendsAndAdventures .gallery-img img,
-#DowntownAtlanta .gallery-img img {
+#DowntownAtlanta .gallery-img img,
+#Photography .gallery-img img {
   width: 70%;
   height: 70%;
   -o-object-fit: cover;
@@ -400,7 +409,8 @@ canvas {
 #Photos .photo-caption,
 #ForgottenThings .photo-caption,
 #FriendsAndAdventures .photo-caption,
-#DowntownAtlanta .photo-caption {
+#DowntownAtlanta .photo-caption,
+#Photography .photo-caption {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -410,13 +420,15 @@ canvas {
 #Photos .photo-caption a,
 #ForgottenThings .photo-caption a,
 #FriendsAndAdventures .photo-caption a,
-#DowntownAtlanta .photo-caption a {
+#DowntownAtlanta .photo-caption a,
+#Photography .photo-caption a {
   color: #976297;
 }
 #Photos .photo-caption p,
 #ForgottenThings .photo-caption p,
 #FriendsAndAdventures .photo-caption p,
-#DowntownAtlanta .photo-caption p {
+#DowntownAtlanta .photo-caption p,
+#Photography .photo-caption p {
   font-size: 1rem;
 }
 
@@ -464,8 +476,25 @@ canvas {
 #VolumesGrid .vol-three {
   background: url(../img/volume-covers/friends-adventure-square.png);
 }
+#VolumesGrid .vol-four {
+  background: url(../img/volume-covers/photography-square.png);
+}
 
+@media screen and (max-width: 751px) {
+  #Photos header h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 523px) {
+  #Photos header h1 {
+    font-size: 1.5rem;
+  }
+}
 @media screen and (max-width: 415px) {
+  #Photos header h1 {
+    font-size: 1.25rem;
+  }
+
   .gallery {
     width: 100%;
   }
@@ -641,6 +670,12 @@ li {
   }
 }
 @media screen and (max-width: 470px) {
+  #LandingLeft {
+    padding: 1rem;
+    padding-top: 2rem;
+  }
+}
+@media screen and (max-width: 418px) {
   #LandingLeft {
     padding: 1rem;
     padding-top: 2rem;

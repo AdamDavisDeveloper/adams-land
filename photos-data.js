@@ -1,6 +1,7 @@
 const downtownATLPath = `/img/downtown-atl/`;
 const forgottenThingsPath = `/img/forgotten-things/`;
 const friendsAndAdventuresPath = `/img/friends-and-adventures/`;
+const photographyPath = `/img/photography/`;
 
 export default [
 	{
@@ -136,6 +137,17 @@ export default [
 				path: `${friendsAndAdventuresPath}l-sit-rock.png`,
 				date: ``,
 				caption: `tried doing an l-sit isometric hold between these massive rocks we found in a stream`,
+			},
+		],
+	},
+	{
+		volume: `photography`,
+		photos: [
+			{
+				name: `portrait ollie 1`,
+				path: `${photographyPath}ollie-1.jpg`,
+				date: ``,
+				caption: `first try in years ~ ollie`,
 			},
 		],
 	},

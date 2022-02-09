@@ -35,4 +35,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	if (document.getElementById("FriendsAndAdventures")) {
 		generatePhotos(getVolumeImages("friends-and-adventures"));
 	}
+	if (document.getElementById("Photography")) {
+		generatePhotos(getVolumeImages("photography"));
+	}
 });

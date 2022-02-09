@@ -2,7 +2,8 @@
 #Photos,
 #ForgottenThings,
 #FriendsAndAdventures,
-#DowntownAtlanta {
+#DowntownAtlanta,
+#Photography {
 	height: 100vh;
 	width: 100%;
 	header {
@@ -127,11 +128,41 @@
 	.vol-three {
 		background: url(../img/volume-covers/friends-adventure-square.png);
 	}
+	.vol-four {
+		background: url(../img/volume-covers/photography-square.png);
+	}
 }
 
 //Media Queries
 
+@media screen and (max-width: 751px) {
+	#Photos {
+		header {
+			h1 {
+				font-size: 2rem;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 523px) {
+	#Photos {
+		header {
+			h1 {
+				font-size: 1.5rem;
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 415px) {
+	#Photos {
+		header {
+			h1 {
+				font-size: 1.25rem;
+			}
+		}
+	}
 	.gallery {
 		width: 100%;
 	}
