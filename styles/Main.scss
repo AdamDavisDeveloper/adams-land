@@ -4,6 +4,18 @@
 @import "./Recordings";
 @import "./Quotes";
 @import "./Photos";
+@import "./SpecialThings";
+
+//Root mostly for Special Things colors
+:root {
+	--primary: #22d2a0;
+	--secondary: #192824;
+	--background: rgb(27, 37, 32);
+	--green: #1fc11b;
+	--yellow: #ffd913;
+	--orange: #ff9c55;
+	--red: #ff5555;
+}
 
 @font-face {
 	font-family: "Sansation-Light";
