@@ -530,7 +530,7 @@ canvas {
 }
 #SpecialThings .card a,
 #SpecialThings .card p {
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-family: "Archivo Black", "Archivo", sans-serif;
   font-weight: normal;
   margin-bottom: 1rem;
@@ -556,7 +556,7 @@ canvas {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  padding-top: 0.75rem;
+  padding-top: 0.85rem;
 }
 #SpecialThings .card .home-button-wrapper {
   position: -webkit-sticky;
