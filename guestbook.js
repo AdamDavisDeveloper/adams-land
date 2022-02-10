@@ -10,6 +10,14 @@ import {
 	deleteDoc,
 } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-firestore.js";
 
+const apiKey = () => {
+	try {
+		return FIRESTORE_API_KEY;
+	} catch (error) {
+		console.error(error);
+	}
+};
+
 const firebaseConfig = {
 	apiKey: apiKey(),
 
@@ -29,14 +37,6 @@ const firebaseConfig = {
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
 export const db = getFirestore();
-
-const apiKey = () => {
-	try {
-		return FIRESTORE_API_KEY;
-	} catch (error) {
-		console.error(error);
-	}
-};
 
 async function getEntries() {
 	const querySnapshot = await getDocs(collection(db, "guestbook-entries"));
