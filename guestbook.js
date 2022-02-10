@@ -10,16 +10,16 @@ import {
 	deleteDoc,
 } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-firestore.js";
 
-const apiKey = () => {
-	try {
-		return process.env.FIRESTORE_API_KEY;
-	} catch (error) {
-		console.error(error);
-	}
-};
+// const apiKey = () => {
+// 	try {
+// 		return process.env.FIRESTORE_API_KEY;
+// 	} catch (error) {
+// 		console.error(error);
+// 	}
+// };
 
 const firebaseConfig = {
-	apiKey: apiKey(),
+	apiKey: process.env.FIRESTORE_API_KEY,
 
 	authDomain: "adamsland-guestbook.firebaseapp.com",
 
@@ -45,5 +45,9 @@ async function getEntries() {
 	});
 }
 
-if (FIRESTORE_API_KEY) getEntries();
 //getEntries();
+
+window.addEventListener("DOMContentLoaded", (event) => {
+	console.log("Content loaded");
+	if (FIRESTORE_API_KEY) getEntries();
+});
