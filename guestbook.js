@@ -12,7 +12,7 @@ import {
 
 const apiKey = () => {
 	try {
-		return FIRESTORE_API_KEY;
+		return process.env.FIRESTORE_API_KEY;
 	} catch (error) {
 		console.error(error);
 	}
