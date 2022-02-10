@@ -1,5 +1,5 @@
 # adams.land
-My little slice of the internet. Nothing is perfect. It's always in a state of development and that's how I like it. Hyper personal website built using basic technologies - just for fun. 🌱
+My little slice of the internet. Nothing is perfect. It's always in a state of development and that's how I like it. Hyper personal website built using basic technologies (and firestore, shh..) - just for fun. 🌱
 
 https://adams.land
 
