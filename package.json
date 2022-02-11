@@ -1,7 +1,7 @@
 {
-  "dependencies": {
-    "express": "^4.17.2",
-    "firebase": "^9.6.6",
-    "particles.js": "^2.0.0"
-  }
+	"dependencies": {
+		"dotenv": "^16.0.0",
+		"firebase": "^9.6.6",
+		"particles.js": "^2.0.0"
+	}
 }

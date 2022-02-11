@@ -9,7 +9,7 @@ import {
 	doc,
 	deleteDoc,
 } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-firestore.js";
-
+import firestoreApi from "./cloud-functions/firestore-api";
 // const apiKey = () => {
 // 	try {
 // 		return process.env.FIRESTORE_API_KEY;
@@ -19,7 +19,7 @@ import {
 // };
 
 const firebaseConfig = {
-	apiKey: process.env.FIRESTORE_API_KEY,
+	apiKey: firestoreApi,
 
 	authDomain: "adamsland-guestbook.firebaseapp.com",
 
