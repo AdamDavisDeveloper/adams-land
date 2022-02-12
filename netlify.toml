@@ -2,5 +2,5 @@
     functions = "cloud-functions"
 [[redirects]]
     from = "/api/*"
-    to = "/.netlify/functions/:splat"
+    to = "/.netlify/cloud-functions/:splat"
     status = 200
