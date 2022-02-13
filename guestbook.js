@@ -10,6 +10,8 @@ import {
 	deleteDoc,
 } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-firestore.js";
 
+const GuestbookEntries = document.getElementById("Entries");
+
 const firebaseConfig = {
 	//ik this is bad
 	apiKey: apiKey().then((response) => response),
@@ -31,11 +33,9 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore();
 
-async function getEntries() {
+async function firestoreEntries() {
 	const querySnapshot = await getDocs(collection(db, "guestbook-entries"));
-	await querySnapshot.forEach((doc) => {
-		console.log(doc.id, "=>", doc.data());
-	});
+	return querySnapshot;
 }
 
 async function apiKey() {
@@ -43,6 +43,20 @@ async function apiKey() {
 	return res.json();
 }
 
-window.addEventListener("DOMContentLoaded", (event) => {
-	getEntries();
+function generateEntries(data) {
+	data.forEach((ent) => {
+		const Entry = document.createElement("div");
+		Entry.innerHTML = `
+	    <div class="entry">
+	      <p class="entry-date">${ent.data().date}</p>
+	      <p class="entry-name">${ent.data().name}</p>
+	      <p class="entry-message">${ent.data().message}</p>
+	    </div>
+	`;
+		GuestbookEntries.appendChild(Entry);
+	});
+}
+
+window.addEventListener("DOMContentLoaded", async (event) => {
+	generateEntries(await firestoreEntries());
 });
