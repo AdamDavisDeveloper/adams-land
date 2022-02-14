@@ -646,27 +646,36 @@ canvas {
 #GuestbookCard {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 60%;
   min-height: 60vh;
   background: #eaab6a;
   border-radius: 20px;
+  padding: 2rem 0rem;
+  color: white;
+  font-family: "Raleway", sans-serif;
 }
 #GuestbookCard .main-column {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  height: 100%;
   flex: 3;
+}
+#GuestbookCard .main-column h1 {
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 4px solid #114B5F;
 }
 #GuestbookCard .emoji-column {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 100%;
   flex: 1;
+}
+#GuestbookCard .emoji-column img {
+  margin: 1rem 0rem;
 }
 
 :root {
