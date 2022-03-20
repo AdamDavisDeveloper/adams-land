@@ -66,6 +66,13 @@
 	div {
 		margin-bottom: 1.5rem;
 	}
+	.entry-name {
+		font-style: italic;
+	}
+	.entry-name,
+	.entry-message {
+		font-size: 1rem;
+	}
 }
 
 #SignBook,

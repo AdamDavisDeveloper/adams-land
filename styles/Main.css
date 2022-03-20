@@ -701,6 +701,13 @@ canvas {
 #Entries div {
   margin-bottom: 1.5rem;
 }
+#Entries .entry-name {
+  font-style: italic;
+}
+#Entries .entry-name,
+#Entries .entry-message {
+  font-size: 1rem;
+}
 
 #SignBook,
 #SubmitForm {
