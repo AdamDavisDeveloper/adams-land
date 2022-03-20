@@ -21,15 +21,36 @@
 					<img src="/img/emoji-images/fish.png" alt="fish on hook emoji" />
 					<img src="/img/emoji-images/campsite.png" alt="campsite emoji" />
 				</div>
-				<div class="main-column">
-					<div>
+				<!-- MainContent -> header + Entries + button -->
+				<div id="MainContent">
+					<header>
 						<h1>the adams.land guestbook</h1>
 						<div id="Entries"></div>
-					</div>
+					</header>
 					<div class="button-wrapper-flexend">
 						<button id="SignBook">sign the guestbook</button>
 					</div>
 				</div>
+				<!-- Form -> header + inputs + button -->
+				<form id="Form">
+					<header>
+						<h1>the adams.land guestbook</h1>
+					</header>
+					<div class="label-input-wrapper">
+						<label for="name">name</label>
+						<input id="NameData" name="name" type="text" />
+					</div>
+					<div class="label-input-wrapper">
+						<label for="message">message</label>
+						<textarea
+							id="MessageData"
+							name="message"
+							cols="21"
+							rows="5"
+						></textarea>
+					</div>
+					<button id="SubmitForm">put down the pen</button>
+				</form>
 				<div class="emoji-column">
 					<img
 						src="/img/emoji-images/peace.png"
@@ -42,6 +63,7 @@
 		</div>
 
 		<noscript>you need to enable JavaScript to run this app, homie.</noscript>
+		<script src="/node_modules/moment/moment.js"></script>
 		<script type="module" src="/guestbook.js"></script>
 	</body>
 </html>

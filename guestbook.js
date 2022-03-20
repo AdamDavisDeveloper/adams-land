@@ -10,8 +10,20 @@ import {
 	deleteDoc,
 } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-firestore.js";
 
+// DOM Content Variables
+const Form = document.getElementById("Form");
+const SubmitForm = document.getElementById("SubmitForm");
+const MainContent = document.getElementById("MainContent");
 const GuestbookEntries = document.getElementById("Entries");
+const SignGuestbookBtn = document.getElementById("SignBook");
 
+// Formatting
+function getCurrentDate() {
+	const datetime = new Date();
+	return moment(datetime).format("MM-D-YYYY");
+}
+
+// Firebase
 const firebaseConfig = {
 	//ik this is bad
 	apiKey: apiKey().then((res) => {
@@ -41,8 +53,25 @@ async function firestoreEntries() {
 	return querySnapshot;
 }
 
+async function submitData() {
+	let data = {
+		date: getCurrentDate(),
+		name: document.getElementById("NameData").value,
+		message: document.getElementById("MessageData").value,
+	};
+	const docRef = await addDoc(collection(db, "guestbook-entries"), data).then(
+		(res) => {
+			if (!res)
+				alert(
+					"There was an issue with your request. Please try again l8r or shoot adam a message."
+				);
+		}
+	);
+}
+
 async function apiKey() {
-	return await fetch("/.netlify/functions/firestore-api");
+	const res = await fetch("/.netlify/functions/firestore-api");
+	return res.json();
 }
 
 function generateEntries(data) {
@@ -58,6 +87,27 @@ function generateEntries(data) {
 		GuestbookEntries.appendChild(Entry);
 	});
 }
+
+// UI changes
+function showForm() {
+	MainContent.style.display = "none";
+	Form.style.display = "flex";
+}
+
+function hideForm() {
+	MainContent.style.display = "flex";
+	Form.style.display = "none";
+}
+
+SignGuestbookBtn.addEventListener("click", (e) => {
+	showForm();
+});
+
+SubmitForm.addEventListener("click", (e) => {
+	e.preventDefault();
+	hideForm();
+	submitData();
+});
 
 window.addEventListener("DOMContentLoaded", async (event) => {
 	generateEntries(await firestoreEntries());

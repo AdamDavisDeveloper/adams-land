@@ -2,6 +2,7 @@
 	"dependencies": {
 		"dotenv": "^16.0.0",
 		"firebase": "^9.6.6",
+		"moment": "^2.29.1",
 		"particles.js": "^2.0.0"
 	}
 }

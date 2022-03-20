@@ -655,21 +655,25 @@ canvas {
   color: white;
   font-family: "Raleway", sans-serif;
 }
-#GuestbookCard .main-column {
-  display: flex;
+#GuestbookCard #MainContent,
+#GuestbookCard #Form {
   justify-content: flex-start;
-  align-items: center;
   flex-direction: column;
   flex: 3;
 }
-#GuestbookCard .main-column h1 {
+#GuestbookCard #MainContent h1,
+#GuestbookCard #Form h1 {
   font-size: 2rem;
   text-align: center;
   letter-spacing: 0.08em;
   padding-bottom: 0.5rem;
   border-bottom: 4px solid #114B5F;
 }
-#GuestbookCard .main-column div {
+#GuestbookCard #MainContent {
+  display: flex;
+  align-items: center;
+}
+#GuestbookCard #MainContent div {
   width: 100%;
 }
 #GuestbookCard .emoji-column {
@@ -686,6 +690,7 @@ canvas {
 #Entries {
   margin: 1rem 0rem;
   height: 16rem;
+  overflow-y: scroll;
   width: 100%;
   color: black;
   background: #e8e8e8;
@@ -697,7 +702,8 @@ canvas {
   margin-bottom: 1.5rem;
 }
 
-#SignBook {
+#SignBook,
+#SubmitForm {
   border: none;
   border-radius: 10px;
   background: #114b5f;
@@ -711,6 +717,39 @@ canvas {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+
+#Form {
+  display: none;
+  align-items: flex-start;
+}
+#Form header {
+  margin-bottom: 1rem;
+}
+#Form .label-input-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+#Form label {
+  font-size: 1rem;
+}
+#Form input,
+#Form textarea {
+  padding: 0.15rem 0rem;
+  padding-left: 0.25rem;
+  border: none;
+  border-bottom: 2px solid #114b5f;
+  border-right: 2px solid #114b5f;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  resize: none;
+}
+#Form input:focus,
+#Form textarea:focus {
+  outline: none;
 }
 
 :root {
