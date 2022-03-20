@@ -14,7 +14,10 @@ const GuestbookEntries = document.getElementById("Entries");
 
 const firebaseConfig = {
 	//ik this is bad
-	apiKey: apiKey().then((response) => response),
+	apiKey: apiKey().then((res) => {
+		if (!res) alert("Could not fetch API key.");
+		else return res;
+	}),
 
 	authDomain: "adamsland-guestbook.firebaseapp.com",
 
@@ -39,8 +42,7 @@ async function firestoreEntries() {
 }
 
 async function apiKey() {
-	const res = await fetch("/.netlify/functions/firestore-api");
-	return res.json();
+	return await fetch("/.netlify/functions/firestore-api");
 }
 
 function generateEntries(data) {
