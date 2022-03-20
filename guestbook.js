@@ -18,7 +18,7 @@ const GuestbookEntries = document.getElementById("Entries");
 const SignGuestbookBtn = document.getElementById("SignBook");
 
 // Formatting
-function getCurrentDate() {
+function getCurrentDateFormatted() {
 	const datetime = new Date();
 	return moment(datetime).format("MM-D-YYYY");
 }
@@ -55,7 +55,8 @@ async function firestoreEntries() {
 
 async function submitData() {
 	let data = {
-		date: getCurrentDate(),
+		timestamp: new Date(),
+		date: getCurrentDateFormatted(),
 		name: document.getElementById("NameData").value,
 		message: document.getElementById("MessageData").value,
 	};
