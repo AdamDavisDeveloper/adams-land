@@ -834,7 +834,8 @@ li {
   display: flex;
   flex-direction: row;
   color: #2c2c2c;
-  height: 90vh;
+  min-height: 90vh;
+  padding-bottom: 2rem;
 }
 
 #Header {
@@ -934,6 +935,11 @@ li {
     display: none;
   }
 }
+@media screen and (max-width: 513px) {
+  #StickyFooter {
+    display: none;
+  }
+}
 @media screen and (max-width: 470px) {
   #LandingLeft {
     padding: 1rem;
@@ -944,5 +950,13 @@ li {
   #LandingLeft {
     padding: 1rem;
     padding-top: 2rem;
+  }
+
+  #Directory {
+    width: 17rem;
+  }
+
+  .emojis-ext {
+    display: none;
   }
 }/*# sourceMappingURL=Main.css.map */
