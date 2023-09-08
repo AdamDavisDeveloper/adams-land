@@ -1,5 +1,4 @@
 #Return {
-  position: -webkit-sticky;
   position: sticky;
   top: 40px;
   left: 0;
@@ -69,7 +68,7 @@
   margin-bottom: 1rem;
 }
 #DreamCards .dream-entry .date-time h1 {
-  color: #10163342;
+  color: rgba(16, 22, 51, 0.2588235294);
 }
 
 canvas {
@@ -106,7 +105,7 @@ canvas {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: #313131;
+  color: rgb(49, 49, 49);
   letter-spacing: 0.2em;
 }
 #Thoughts .header span,
@@ -121,7 +120,7 @@ canvas {
 #Thoughts .header a,
 #Thoughts .subtitle a {
   margin-top: 1rem;
-  color: #2f4d70;
+  color: rgb(47, 77, 112);
   cursor: pointer;
 }
 
@@ -143,23 +142,23 @@ canvas {
 }
 
 #AboutMe {
+  padding: 0 5%;
   height: 100vh;
   font-family: "Questrial", sans-serif;
 }
 #AboutMe header {
-  border-bottom: 5px solid #373b7a;
+  border-bottom: 5px solid rgb(55, 59, 122);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 7rem;
   text-align: center;
 }
 #AboutMe header a {
-  color: #373b7a;
+  color: rgb(55, 59, 122);
 }
 #AboutMe .about-header {
   font-size: 2rem;
-  color: #373b7a;
+  color: rgb(55, 59, 122);
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
 }
@@ -169,35 +168,21 @@ canvas {
   align-items: flex-start;
   flex-direction: column;
   margin-top: 2rem;
-  height: 50vh;
-  padding-left: 5rem;
+  padding: 0;
 }
 #AboutMe #AboutInfo h1 {
-  color: #537bd1;
+  color: rgb(83, 123, 209);
 }
 #AboutMe #AboutInfo img {
-  width: 150px;
-  border: 2px solid #373b7a;
-  border-radius: 10px;
-  box-shadow: 3px 3px #373b7a;
+  width: 30%;
+  height: 20%;
 }
 #AboutMe #AboutObject {
-  display: inline-block;
-  padding: 1rem;
-  margin-top: 1rem;
-  border-radius: 10px;
-  line-height: 150%;
-  box-shadow: inset 5px 5px 5px #c3c4be, inset -5px -5px 5px #eeeeee;
+  width: 70%;
 }
 #AboutMe #AboutObject p {
-  font-family: monospace;
-  font-size: 1rem;
-}
-#AboutMe #AboutObject .indent-14px {
-  text-indent: 14px;
-}
-#AboutMe #AboutObject .indent-28px {
-  text-indent: 28px;
+  font-size: 1.25rem;
+  line-height: 140%;
 }
 
 #Recordings {
@@ -232,7 +217,7 @@ canvas {
 #Recordings .text-bg-box {
   background: #5b754e;
   padding: 0.75rem 4rem;
-  border: 2px solid #cfcfcf;
+  border: 2px solid rgb(207, 207, 207);
 }
 #Recordings .t-align-center {
   text-align: center;
@@ -268,7 +253,7 @@ canvas {
 }
 #Quotes header img {
   border-radius: 50%;
-  border: 5px solid #50c1c9;
+  border: 5px solid rgb(80, 193, 201);
   height: 30%;
   width: 30%;
 }
@@ -422,7 +407,7 @@ canvas {
 #FriendsAndAdventures .photo-caption a,
 #DowntownAtlanta .photo-caption a,
 #Photography .photo-caption a {
-  color: #976297;
+  color: rgb(151, 98, 151);
 }
 #Photos .photo-caption p,
 #ForgottenThings .photo-caption p,
@@ -453,7 +438,7 @@ canvas {
   height: 12rem;
   width: 12rem;
   border-radius: 10px;
-  background: #168194;
+  background: rgb(22, 129, 148);
   text-align: left;
   padding: 0rem 1rem;
   margin-bottom: 2rem;
@@ -494,13 +479,11 @@ canvas {
   #Photos header h1 {
     font-size: 1.25rem;
   }
-
   .gallery {
     width: 100%;
   }
-
   .gallery-info p,
-.gallery-info a {
+  .gallery-info a {
     margin: 0rem 1rem;
   }
 }
@@ -543,8 +526,7 @@ canvas {
   color: var(--orange);
 }
 #SpecialThings .card:hover {
-  -webkit-animation: shadow-wave 2.5s ease infinite;
-          animation: shadow-wave 2.5s ease infinite;
+  animation: shadow-wave 2.5s ease infinite;
 }
 #SpecialThings .card .underline {
   height: 2px;
@@ -559,7 +541,6 @@ canvas {
   padding-top: 0.85rem;
 }
 #SpecialThings .card .home-button-wrapper {
-  position: -webkit-sticky;
   position: sticky;
   bottom: 0;
   right: 0;
@@ -571,32 +552,6 @@ canvas {
   background: #2c1b48;
   color: white;
   padding: 0.45rem;
-}
-@-webkit-keyframes shadow-wave {
-  0% {
-    border: 3px solid var(--primary);
-    box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--green), 20px -20px 0 -3px var(--background), 20px -20px var(--yellow), 30px -30px 0 -3px var(--background), 30px -30px var(--orange), 40px -40px 0 -3px var(--background), 40px -40px var(--red);
-  }
-  20% {
-    border: 3px solid var(--red);
-    box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--primary), 20px -20px 0 -3px var(--background), 20px -20px var(--green), 30px -30px 0 -3px var(--background), 30px -30px var(--yellow), 40px -40px 0 -3px var(--background), 40px -40px var(--orange);
-  }
-  40% {
-    border: 3px solid var(--orange);
-    box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--red), 20px -20px 0 -3px var(--background), 20px -20px var(--primary), 30px -30px 0 -3px var(--background), 30px -30px var(--green), 40px -40px 0 -3px var(--background), 40px -40px var(--yellow);
-  }
-  60% {
-    border: 3px solid var(--yellow);
-    box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--orange), 20px -20px 0 -3px var(--background), 20px -20px var(--red), 30px -30px 0 -3px var(--background), 30px -30px var(--primary), 40px -40px 0 -3px var(--background), 40px -40px var(--green);
-  }
-  80% {
-    border: 3px solid var(--green);
-    box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--yellow), 20px -20px 0 -3px var(--background), 20px -20px var(--orange), 30px -30px 0 -3px var(--background), 30px -30px var(--red), 40px -40px 0 -3px var(--background), 40px -40px var(--primary);
-  }
-  100% {
-    border: 3px solid var(--primary);
-    box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--green), 20px -20px 0 -3px var(--background), 20px -20px var(--yellow), 30px -30px 0 -3px var(--background), 30px -30px var(--orange), 40px -40px 0 -3px var(--background), 40px -40px var(--red);
-  }
 }
 @keyframes shadow-wave {
   0% {
@@ -833,7 +788,7 @@ li {
 #LandingPage {
   display: flex;
   flex-direction: row;
-  color: #2c2c2c;
+  color: rgb(44, 44, 44);
   height: 90vh;
 }
 
@@ -843,7 +798,7 @@ li {
   align-items: center;
 }
 #Header h1 {
-  background: -webkit-linear-gradient(#c58888, #db87cb);
+  background: -webkit-linear-gradient(rgb(197, 136, 136), rgb(219, 135, 203));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -857,11 +812,11 @@ li {
   margin-left: 1rem;
 }
 #Header .current-version {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid rgb(221, 221, 221);
 }
 
 #Subheader {
-  color: #2c2c2c;
+  color: rgb(44, 44, 44);
   padding-left: 1.5rem;
   max-width: 70%;
   margin-bottom: 5rem;
@@ -878,7 +833,6 @@ li {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  position: -webkit-sticky;
   position: sticky;
   bottom: 0;
   left: 0;
@@ -903,9 +857,9 @@ li {
   margin-left: 1.5rem;
   display: inline-block;
   padding: 1rem;
-  border: 1.5px solid #2c2c2c;
-  border-bottom: 2.5px solid #2c2c2c;
-  border-left: 2.5px solid #2c2c2c;
+  border: 1.5px solid rgb(44, 44, 44);
+  border-bottom: 2.5px solid rgb(44, 44, 44);
+  border-left: 2.5px solid rgb(44, 44, 44);
   border-radius: 5px;
   width: 22rem;
 }
@@ -919,7 +873,7 @@ li {
 }
 #Directory ul li {
   margin: 0.5rem 0rem;
-  background: -webkit-linear-gradient(#c58888, #db87cb);
+  background: -webkit-linear-gradient(rgb(197, 136, 136), rgb(219, 135, 203));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
