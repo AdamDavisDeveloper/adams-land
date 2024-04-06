@@ -87,6 +87,10 @@ body {
     margin-bottom: 2rem;
 }
 
+.header-img {
+    height: 20%;
+}
+
 
 
 #Noise {
@@ -145,6 +149,10 @@ you can add them directly to the <div id="header"></div> element! */
     background-image: var(--header-image);
     background-size: 100%;
     background-position-y: 8%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
 }
 
 /* navigation section!! */
