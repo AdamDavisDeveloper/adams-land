@@ -1,0 +1,10 @@
+#AboutAdam {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left { flex: 1; }
+.right { flex: 1; }
+
+#AboutAdam img { height: 10rem; }
