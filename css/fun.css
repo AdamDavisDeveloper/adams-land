@@ -32,7 +32,19 @@ header {
 
 
 /* Forest Responsive Styles */
+@media only screen and (max-width: 770px) {
+    #cedar-04 { display: none; }
+}
 
+@media only screen and (max-width: 576px) {
+    #cedar-03 { display: none; }
+}
+
+@media only screen and (max-width: 370px) {
+    #Forest {
+        justify-content: center;
+    }
+}
 
 
 /* These are Global overrides! this stylesheet is linked after Globals so it can change Global.css effects  */
