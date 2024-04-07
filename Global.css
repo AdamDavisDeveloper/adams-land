@@ -5,6 +5,8 @@
     --light-blue: #007a8b;
     --text-green: #dff8d6;
 
+    --quote-width: 80%;
+
     --content: #43256E;
 }
 
@@ -44,6 +46,12 @@ body {
 
 * {
     box-sizing: border-box;
+}
+
+q {
+    display: block;
+    width: var(--quote-width);
+    margin: auto;
 }
 
 
@@ -244,6 +252,15 @@ strong {
     font-size: smaller;
     background-color: #13092D;
 }
+
+
+/* Home specific styles */
+#WormQuote {
+    width: var(--quote-width); 
+    margin: auto;
+}
+
+
 
 @media only screen and (max-width: 800px) {
     #MainWrapper {
