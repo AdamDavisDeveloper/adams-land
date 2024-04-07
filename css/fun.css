@@ -1,0 +1,42 @@
+
+header {
+    width: 95%;
+    margin: auto;
+}
+
+.fun-card {
+    padding: .5rem;
+    background: #007a8b;
+}
+.img-right img {
+    height: 130px;
+    width: 100px;
+}
+
+#Forest {
+    height: 20rem;
+}
+
+#Doorway {
+    height: 120px;
+    position: absolute;
+    transform: translateY(-75px);
+    pointer-events: none;
+    z-index: 1;
+}
+
+#Bonsly {
+    transform: translate(4px, -25px);
+    z-index: 100;
+}
+
+
+/* Forest Responsive Styles */
+
+
+
+/* These are Global overrides! this stylesheet is linked after Globals so it can change Global.css effects  */
+main {
+    position: relative;
+    padding: 0;
+}

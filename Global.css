@@ -1,35 +1,12 @@
-
-/* user styles */
-
-/* styles are what change the color and sizes of stuff on your site. */
-
-/* these are variables that are being used in the code
-these tended to confuse some people, so I only kept 
-the images as variables */
-
 :root {
     --header-image: url('./img/header.jpg');
-    /* --body-bg-image: url('https://sadhost.neocities.org/images/tiles/purplesky.gif'); */
-    /* --body-bg-image: url('https://dl.glitter-graphics.com/pub/1704/1704220r5bd4hq5jc.jpg'); */
-    /* --body-bg-image: url('https://dl.glitter-graphics.com/pub/510/510342i2xh37fie7.gif'); */
-    /* --body-bg-image: url('https://dl.glitter-graphics.com/pub/2519/2519859trcasgdaln.jpg'); */
-    /* --body-bg-image: url('http://backgroundsarchive.com/images/pub/0/261zd4yxqwvhm.jpg'); */
     --body-bg-image: url('./img/stars.gif');
+    --main-green: #3b5821;
+    --light-blue: #007a8b;
+    --text-green: #dff8d6;
 
-    /* colors */
     --content: #43256E;
 }
-
-/* if you have the URL of a font, you can set it below */
-/* feel free to delete this if it's not your vibe */
-
-/* this seems like a lot for just one font and I would have to agree 
-but I wanted to include an example of how to include a custom font.
-If you download a font file you can upload it onto your Neocities
-and then link it! Many fonts have separate files for each style
-(bold, italic, etc. T_T) which is why there are so many!
-
-*/
 
 @font-face {
     font-family: Nunito;
@@ -59,7 +36,6 @@ body {
     font-family: 'Nunito', sans-serif;
     margin: 0;
     background-color: #08031A;
-    /* you can delete the line below if you'd prefer to not use an image */
     background-size: 65px;
     color: #ffffff;
     background-image: var(--body-bg-image);
@@ -78,6 +54,8 @@ body {
     text-align: right;
 }
 
+.text-center { text-align: center; }
+
 .horizontal-divider {
     width: 100%;
     margin: auto;
@@ -91,6 +69,12 @@ body {
     height: 20%;
     margin-right: .5rem;
 }
+
+/* Flex Utilities */
+.flex { display: flex; }
+.space-between { justify-content: space-between; }
+.space-evenly { justify-content: space-evenly; }
+.center { justify-content: center; }
 
 
 
@@ -106,47 +90,58 @@ body {
     pointer-events: none;
 }
 
+.talking-img {
+    position: relative;
+    display: inline-block;
+}
 
 
-/* below this line is CSS for the layout */
+.talking-img img {
+    display: block;
+}
 
-/* this is a CSS comment
-to uncomment a line of CSS, remove the * and the /
-before and after the text */
+.speech-bubble {
+    position: absolute;
+    top: -20px;
+    left: -120px;
+    background-color: white;
+    color: #13092D;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: .24rem;
+    display: none;
+    width: 8rem;
+}
+
+.speech-bubble p {
+    font-size: .75rem;
+    margin: 0;
+}
+
+.talking-img:hover .speech-bubble {
+    display: block;
+}
 
 
-/* the "container" is what wraps your entire website */
-/* if you want something (like the header) to be Wider than
-the other elements, you will need to move that div outside
-of the container */
+
+
+/* Layout */
+
 #container {
     max-width: 900px;
     min-height: 100vh;
-    /* this is the width of your layout! */
-    /* if you change the above value, scroll to the bottom
-and change the media query according to the comment! */
     margin: 0 auto;
-    /* this centers the entire page */
 }
 
-/* the area below is for all links on your page
-EXCEPT for the navigation */
 #container a {
-    color: #dff8d6;
+    color: var(--text-green);
     font-weight: bold;
-    /* if you want to remove the underline
-you can add a line below here that says:
-text-decoration:none; */
 }
 
 #header {
     width: 100%;
-    background-color: #007a8b;
-    /* header color here! */
+    background-color: var(--light-blue);
     height: 150px;
-    /* this is only for a background image! */
-    /* if you want to put images IN the header, 
-you can add them directly to the <div id="header"></div> element! */
     background-image: var(--header-image);
     background-size: 100%;
     background-position-y: 8%;
@@ -156,11 +151,9 @@ you can add them directly to the <div id="header"></div> element! */
     align-items: end;
 }
 
-/* navigation section!! */
 #navbar {
     height: 40px;
-    background-color: #007a8b;
-    /* navbar color */
+    background-color: var(--light-blue);
     width: 100%;
 }
 
@@ -175,60 +168,37 @@ you can add them directly to the <div id="header"></div> element! */
 #navbar li {
     padding-top: 10px;
 }
-
-/* navigation links*/
 #navbar li a {
-    color: #dff8d6;
-    /* navbar text color */
+    color: var(--text-green);
     font-weight: 800;
     text-decoration: none;
-    /* this removes the underline */
 }
-
-/* navigation link when a link is hovered over */
 #navbar li a:hover {
     color: #a49cba;
     text-decoration: underline;
 }
 
-#flex {
-    display: flex;
-}
-
-/* this colors BOTH sidebars
-if you want to style them separately,
-create styles for #leftSidebar and #rightSidebar */
 #leftSidebar {
     background-color: #005965;
     width: 200px;
-    padding: 20px;
+    padding: 1.25rem;
     font-size: smaller;
-    /* this makes the sidebar text slightly smaller */
 }
 
 #Updates {
     background-color: #005965;
-    padding: 20px;
+    padding: 1.25rempx;
     font-size: smaller;
 }
 
-
-/* this is the color of the main content area,
-between the sidebars! */
 main {
-    background-color: #3b5821;
+    background-color: var(--main-green);
     flex: 1;
-    padding: 20px;
+    padding: 1.25rem;
     order: 2;
 }
 
-/* what's this "order" stuff about??
-allow me to explain!
-if you're using both sidebars, the "order" value
-tells the CSS the order in which to display them.
-left sidebar is 1, content is 2, and right sidebar is 3! */
-
-*/ #leftSidebar {
+#leftSidebar {
     order: 1;
 }
 
@@ -238,18 +208,16 @@ left sidebar is 1, content is 2, and right sidebar is 3! */
 
 footer {
     background-color: #13092D;
-    /* background color for footer */
     width: 100%;
     height: 40px;
     padding: 10px;
     text-align: center;
-    /* this centers the footer text */
 }
 
 h1,
 h2,
 h3 {
-    color: #dff8d6;
+    color: var(--text-green);
 }
 
 h1 {
@@ -257,18 +225,13 @@ h1 {
 }
 
 strong {
-    /* this styles bold text */
-    color: #dff8d6;
+    color: var(--text-green);
 }
-
-/* this is just a cool box, it's the darker colored one */
 .box {
     background-color: #003a42;
-    border: 1px solid #dff8d6;
+    border: 1px solid var(--text-green);
     padding: 10px;
 }
-
-/* CSS for extras */
 
 #topBar {
     width: 100%;
@@ -278,18 +241,8 @@ strong {
     background-color: #13092D;
 }
 
-
-/* BELOW THIS POINT IS MEDIA QUERY */
-
-/* so you wanna change the width of your page? 
-by default, the container width is 900px.
-in order to keep things responsive, take your new height,
-and then subtrack it by 100. use this new number as the 
-"max-width" value below
-*/
-
 @media only screen and (max-width: 800px) {
-    #flex {
+    #MainWrapper {
         flex-wrap: wrap;
     }
 
@@ -297,10 +250,6 @@ and then subtrack it by 100. use this new number as the
         width: 100%;
     }
 
-    /* the order of the items is adjusted here for responsiveness!
-since the sidebars would be too small on a mobile device.
-feel free to play around with the order!
-*/
     main {
         order: 1;
     }
@@ -315,5 +264,19 @@ feel free to play around with the order!
 
     #navbar ul {
         flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    #cedar-04 { display: none; }
+}
+
+@media only screen and (max-width: 576px) {
+    #cedar-03 { display: none; }
+}
+
+@media only screen and (max-width: 382px) {
+    #Forest {
+        justify-content: center;
     }
 }
