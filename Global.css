@@ -247,6 +247,9 @@ strong {
     margin: auto;
 }
 
+#AdamsLandButton {
+    margin-top: .75rem;
+}
 
 
 @media only screen and (max-width: 800px) {
