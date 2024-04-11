@@ -1,0 +1,21 @@
+small {
+    font-size: .75rem;
+}
+
+#Train {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+.train-station-img {
+    height: 20rem;
+}
+.train-img {
+    height: 8rem;
+}
+
+/* Global Overwrites */
+#leftSidebar {
+    order: 1;
+}

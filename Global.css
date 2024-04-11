@@ -82,7 +82,10 @@ button {
     padding-left: 20px;
     margin-bottom: 6px;
 }
-  
+.sprouted-list a {
+    text-decoration: none;
+}
+
 /* Flex Utilities */
 .flex { display: flex; }
 .space-between { justify-content: space-between; }
@@ -201,6 +204,17 @@ button {
     padding: 1.25rem;
     font-size: smaller;
 }
+#leftSidebar > h2 {
+    order: 2;
+}
+
+#leftSidebar > .box {
+    order: 3;
+}
+
+#rightSidebar {
+    order: 3;
+}
 
 #Updates {
     background-color: #005965;
@@ -213,23 +227,6 @@ main {
     flex: 1;
     padding: 1.25rem;
     order: 2;
-}
-
-#leftSidebar {
-    display: flex;
-    flex-direction: column;
-    order: 1;
-}
-#leftSidebar > h2 {
-    order: 2;
-}
-
-#leftSidebar > .box {
-    order: 3;
-}
-
-#rightSidebar {
-    order: 3;
 }
 
 footer {
