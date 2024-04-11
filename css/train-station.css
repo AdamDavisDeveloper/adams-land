@@ -46,6 +46,7 @@
 
 #Destinations {
     margin-top: 1rem;
+    padding: 1rem;
     display: flex;
 }
 
@@ -53,7 +54,13 @@
     flex: 2;
 }
 
+#Destinations header h2 {
+    margin-top: 0;
+}
+
+
 #DestinationButtons {
+    padding-top: 2.5rem;
     flex: 1;
     overflow: scroll;
     max-height: 20rem;
