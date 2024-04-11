@@ -1,3 +1,24 @@
+#PlaqueWrapper { 
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    width: 100%
+}
+
+#CommemorativePlaque {
+    padding: 1rem;
+    background: rgb(97, 97, 97);
+    /* background-image: url('/img/backgrounds/lavendarnoise.gif'); */
+    width: 15rem;
+    border: 3px solid rgb(215, 215, 215);
+    border-style: inset;
+    box-shadow: -2px 2px 4px rgb(0, 0, 0, 0.5);
+}
+#CommemorativePlaque h2 {
+    color: white;
+    margin: 0;
+}
+
 #Train {
     display: flex;
     justify-content: flex-end;
