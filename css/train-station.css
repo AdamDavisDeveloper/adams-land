@@ -12,6 +12,7 @@
 }
 
 #CommemorativePlaque {
+    font-family: 'Kode Mono', serif;
     padding: 1rem;
     background: rgb(97, 97, 97);
     /* background-image: url('/img/backgrounds/lavendarnoise.gif'); */

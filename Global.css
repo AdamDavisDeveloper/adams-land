@@ -22,6 +22,11 @@
     font-style: italic;
 }
 
+@font-face {
+    font-family: Kode Mono;
+    src: url('./fonts/Kode_Mono/KodeMono-VariableFont_wght.ttf');
+}
+
 body {
     font-family: 'Nunito', sans-serif;
     margin: 0;
