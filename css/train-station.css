@@ -1,0 +1,56 @@
+#Train {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 40vh;
+    width: 100%;
+    background-image: url('/img/wallpapers/train-tracks.png');
+    background-position: bottom;
+    border-radius: 5px 5px 0px 0px;
+}
+.train-station-img {
+    height: 20rem;
+}
+.train-img {
+    height: 8rem;
+    transform: translateY(17px);
+}
+
+#Destinations {
+    margin-top: 1rem;
+    display: flex;
+}
+
+#Destinations header {
+    flex: 2;
+}
+
+#DestinationButtons {
+    flex: 1;
+    overflow: scroll;
+    max-height: 20rem;
+}
+
+/* Mobile Styles for Train img stuff */
+@media screen and (max-width: 508px) {
+    .train-station-img {
+        height: 14rem;
+    }
+    .train-img { 
+        height: 5rem; 
+        transform: translateY(11px);
+    }
+}
+
+@media screen and (max-width: 460px) {
+    #Train {
+        min-height: 14rem;
+        background-position: center
+    }
+}
+
+@media screen and (max-width: 362px) {
+    .train-station-img {
+        height: 12rem;
+    }
+}
