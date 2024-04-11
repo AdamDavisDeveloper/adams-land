@@ -4,6 +4,7 @@
     --main-green: #3b5821;
     --light-blue: #007a8b;
     --text-green: #dff8d6;
+    --text-green-hover: #9fc292;
 
     --quote-width: 80%;
 
@@ -41,6 +42,9 @@ q {
     margin: auto;
 }
 
+button {
+    font-family: 'Nunito', sans-serif;
+}
 
 
 /* Utility Classes */
@@ -187,7 +191,7 @@ q {
     text-decoration: none;
 }
 #navbar li a:hover {
-    color: #a49cba;
+    color: var(--text-green-hover);
     text-decoration: underline;
 }
 
