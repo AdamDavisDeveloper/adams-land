@@ -2,7 +2,13 @@
     padding: 1rem 0;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
     width: 100%
+}
+
+#ToadForman {
+    height: 6rem;
+    transform: translate(-28px, 5px);
 }
 
 #CommemorativePlaque {
