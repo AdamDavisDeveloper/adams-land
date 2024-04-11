@@ -3,6 +3,11 @@ header {
     width: 95%;
     margin: auto;
 }
+/* Fun Forest Blinkie */
+header > img {
+    margin-top: 2rem;
+    width: 90%;
+}
 
 .fun-card {
     padding: .5rem;
