@@ -65,6 +65,10 @@ q {
     margin-right: .5rem;
 }
 
+.sprouted-list {
+    list-style-image: url('/img/plants/green-sprout.gif'); /* Replace 'path_to_your_image.jpg' with the actual path to your image */
+  }
+
 /* Flex Utilities */
 .flex { display: flex; }
 .space-between { justify-content: space-between; }
