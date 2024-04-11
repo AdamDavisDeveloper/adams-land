@@ -274,6 +274,9 @@ strong {
     margin-top: .75rem;
     order: 1;
 }
+#AdamsLandButton img {
+    pointer-events: all;
+}
 
 
 @media only screen and (max-width: 800px) {
