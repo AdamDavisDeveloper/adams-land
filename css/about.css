@@ -9,6 +9,18 @@
 
 #AboutAdam img { height: 10rem; }
 
+#AboutButtons {
+    align-items: first baseline;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#AboutButtons img {
+    margin-right: .5rem;
+    margin-top: .5rem;
+    max-height: 33px;
+}
+
 /* Global Overwrites (caution) */
 .box {
     margin-bottom: 1rem;

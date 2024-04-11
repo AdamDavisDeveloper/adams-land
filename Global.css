@@ -155,7 +155,7 @@ button {
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
+  animation: textclip 2.5s linear infinite;
   display: inline-block;
   filter: brightness(120%);
 }
@@ -307,6 +307,7 @@ strong {
     order: 1;
 }
 #AdamsLandButton img {
+    max-height: 33px;
     pointer-events: all;
 }
 
