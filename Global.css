@@ -98,7 +98,6 @@ button {
 .center { justify-content: center; }
 
 
-
 #Noise {
     position: fixed;
     top: 0;
@@ -314,6 +313,14 @@ strong {
 #AdamsLandButton img {
     max-height: 33px;
     pointer-events: all;
+}
+#AccessCounter {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#AccessCounter p {
+    margin-right: 1rem;
 }
 
 
