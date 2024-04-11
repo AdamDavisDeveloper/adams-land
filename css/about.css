@@ -7,7 +7,8 @@
 .left { flex: 1; }
 .right { flex: 1; }
 
-#AboutAdam img { height: 10rem; }
+#Headshot { height: 10rem }
+.left a { display: block }
 
 #AboutButtons {
     align-items: first baseline;
@@ -19,6 +20,11 @@
     margin-right: .5rem;
     margin-top: .5rem;
     max-height: 33px;
+}
+
+#iMood {
+    width: 48px;
+    height: 15px;
 }
 
 /* Global Overwrites (caution) */
