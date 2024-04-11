@@ -69,7 +69,7 @@
 /* Mobile Styles for Train img stuff */
 @media screen and (max-width: 508px) {
     .train-station-img {
-        height: 14rem;
+        height: 17rem;
     }
     .train-img { 
         height: 5rem; 
