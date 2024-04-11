@@ -212,7 +212,16 @@ main {
 }
 
 #leftSidebar {
+    display: flex;
+    flex-direction: column;
     order: 1;
+}
+#leftSidebar > h2 {
+    order: 2;
+}
+
+#leftSidebar > .box {
+    order: 3;
 }
 
 #rightSidebar {
@@ -263,6 +272,7 @@ strong {
 
 #AdamsLandButton {
     margin-top: .75rem;
+    order: 1;
 }
 
 
@@ -281,6 +291,18 @@ strong {
 
     #leftSidebar {
         order: 2;
+    }
+    
+    #leftSidebar > h2 {
+        order: 1;
+    }
+
+    #leftSidebar > .box {
+        order: 2;
+    }
+
+    #AdamsLandButton {
+        order: 3;
     }
 
     #rightSidebar {
