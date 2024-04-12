@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="/favicon/morning.ico" id="dynamic-favicon">
     <link rel="manifest" href="/site.webmanifest">
-    <title>Welcome to adams.land!</title>
+    <title>Post Office</title>
     <link rel="stylesheet" href="./Global.css">
     <link rel="stylesheet" href="./css/contact.css">
 </head>
@@ -44,8 +44,11 @@
                         <p>
                           <label>Message <textarea name="message" cols="30" rows="3"></textarea></label>
                         </p>
+                        <p style="max-width: 17rem;">
+                          <label style="display: initial;"><input type="checkbox" name="guestbook"> Display your message on Adams Land Guestbook (when it's available)</label>
+                        </p>
                         <p>
-                          <label>Current Minutes (0-59)<input id="minute" name="verification"></input></label>
+                          <label>Current Minutes (0-59) 🕰<input id="minute" name="verification"></input></label>
                         </p>
                         <div id="errorMessage">
                             <p style="color: brown;">Sorry, we can't send your message until the current minutes input matches your device's time in minutes.</p>
