@@ -304,14 +304,15 @@ strong {
     margin: auto;
 }
 
-#AdamsLandButton {
+#AdamsLandBtnWrapper {
     margin-top: .75rem;
     order: 1;
 }
-#AdamsLandButton img {
+#AdamsLandBtnWrapper img {
     max-height: 33px;
     pointer-events: all;
 }
+#AdamsLandButton { cursor: pointer; }
 #AccessCounter {
     display: flex;
     justify-content: flex-start;
@@ -347,7 +348,7 @@ strong {
         order: 2;
     }
 
-    #AdamsLandButton {
+    #AdamsLandBtnWrapper {
         order: 3;
     }
 
