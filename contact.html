@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/favicon/morning.ico" id="dynamic-favicon">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Welcome to adams.land!</title>
+    <link rel="stylesheet" href="./Global.css">
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+<body>
+    <div id="Noise"></div>
+    <div id="container">
+        <div id="headerArea">
+            <div id="header" style="height: 183px;">
+                <img class="header-img" src="./img/pokemon-gifs/shaymin.gif" alt="">
+            </div>
+            <nav id="navbar" style="margin-bottom: 0px;">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about.html">Info</a></li>
+                    <li><a href="/fun.html">Fun</a></li>
+                    <li><a href="/explore/">Explore</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="MainWrapper">
+            
+            <main>
+                <h1>Post Office 📮</h1>
+                
+                <div class="box">
+                    <h2>Contact Adam</h2>
+                    <form id="ContactForm" name="contact" netlify>
+                        <p>
+                          <label>Name <input type="text" name="name" /></label>
+                        </p>
+                        <p>
+                          <label>Email <input type="email" name="email" /></label>
+                        </p>
+                        <p>
+                          <label>Message <textarea name="message" cols="30" rows="3"></textarea></label>
+                        </p>
+                        <p>
+                          <label>Current Minutes (0-59)<input id="minute" name="verification"></input></label>
+                        </p>
+                        <div id="errorMessage">
+                            <p style="color: brown;">Sorry, we can't send your message until the current minutes input matches your device's time in minutes.</p>
+                        </div>
+                        <p>
+                          <button type="submit">Send via Funji Priority+</button>
+                        </p>
+                      </form>
+                </div>
+
+
+            </main>    
+    </div>
+
+    <script src="/js/dynamicFavicons.js"></script>
+    <script src="/js/validateForm.js"></script>
+</body>
+</html>

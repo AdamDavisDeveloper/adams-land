@@ -1,0 +1,16 @@
+#ContactForm label {
+    display: inline-grid;
+}
+
+#ContactForm input {
+
+}
+
+#ContactForm input, #ContactForm textarea {
+    border: none;
+    border-radius: 3px;
+}
+
+#errorMessage {
+    display: none;
+}
