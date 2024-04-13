@@ -94,6 +94,7 @@ button {
 .space-between { justify-content: space-between; }
 .space-evenly { justify-content: space-evenly; }
 .center { justify-content: center; }
+.align-center { align-items: center; }
 
 
 #Noise {
