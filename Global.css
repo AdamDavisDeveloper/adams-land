@@ -51,12 +51,21 @@ button {
 
 
 /* Utility Classes */
+.custom-emojis img {
+    height: 24px;
+    display: inline;
+    margin-right: .5rem;
+}
+
 .right-align {
     width: 100%;
     text-align: right;
 }
 
 .text-center { text-align: center; }
+
+.inline { display: inline; }
+.block { display: block; }
 
 .horizontal-divider {
     width: 100%;
@@ -300,6 +309,10 @@ strong {
 
 
 /* Home specific styles */
+#Home header h1{
+    margin-right: .5rem;
+}
+
 #WormQuote {
     width: var(--quote-width); 
     margin: auto;
