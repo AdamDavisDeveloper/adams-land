@@ -10,3 +10,5 @@ Visit: [Adams Land](https://adams.land)
 ## dev notes
 
 when running your dev server locally, run `netlify dev` which will run on `localhost:8888` & pull env vars from netlify dashboard to use in the project.
+
+When updating the images JSON file, run this in the root dir: `python3 img-json.py img/tiny-pixels img/medium-pixels img/animals img/collection img/plants img/stamps img/banners-dividers img/blinkies`. Make sure to update this is you have created any new image folders you want to include.

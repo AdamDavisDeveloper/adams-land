@@ -1,0 +1,24 @@
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    width: 100%;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.image-container img {
+    max-height: 150px;
+    max-width: 150px;
+}
+
+.search-container {
+    margin: 20px;
+    width: 100%;
+}
+
+.search-container input {
+    height: 2.25rem;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/favicon/morning.ico" id="dynamic-favicon">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Image Grid</title>
+    <link rel="stylesheet" href="./Global.css">
+    <link rel="stylesheet" href="./css/img-grid.css">
+</head>
+<body>
+    <div id="Noise"></div>
+    <div id="container">
+        <div id="headerArea">
+            <div id="header" style="height: 183px;">
+            </div>
+            <nav id="navbar" style="margin-bottom: 0px;">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about.html">Info</a></li>
+                    <li><a href="/fun.html">Fun</a></li>
+                    <li><a href="/explore/">Explore</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    <div id="MainWrapper">
+        <main id="ImageGrid">
+            <div class="search-container">
+                <h1>Adams Toy Box</h1>
+                <p>I'm still working on a proper naming convention for these.</p>
+                <input type="text" id="search-input" placeholder="Search images...">
+            </div>
+            <div id="image-grid" class="image-grid"></div>
+        </main>
+    </div>
+    <script src="/js/img-grid.js"></script>
+</body>
+</html>
