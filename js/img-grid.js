@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let images = [];
 
     async function fetchImages() {
-        const response = await fetch('images.json');
+        const response = await fetch('../images.json');
         images = await response.json();
         displayImages(images);
     }
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const parts = imagePath.split('/');
             const fileName = parts[parts.length - 1];
             const imageNameWithoutExtension = fileName.split('.')[0];
-            div.innerHTML = `<img src="${imagePath}" alt="${imageNameWithoutExtension}">
+            div.innerHTML = `<img src="../${imagePath}" alt="${imageNameWithoutExtension}">
                              <p>${imageNameWithoutExtension}</p>`;
             grid.appendChild(div);
         });
