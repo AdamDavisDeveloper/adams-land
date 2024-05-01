@@ -1,8 +1,17 @@
+#ToyBox h1 {
+    margin-bottom: 0; 
+}
+
+#ToyBox p {
+    margin-top: 0;
+}
+
 .image-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 10px;
     width: 100%;
+    margin-top: 2rem;
 }
 
 .image-container {
@@ -21,3 +30,12 @@
 .search-container input {
     height: 2.25rem;
 }
+
+#QuickReturn {
+    display: flex;
+}
+#QuickReturn img {
+    height: 40px;
+    width: 40px;
+    margin-left: 1rem;
+} 
