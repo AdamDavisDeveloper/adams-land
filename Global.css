@@ -104,6 +104,7 @@ button {
 .space-evenly { justify-content: space-evenly; }
 .center { justify-content: center; }
 .align-center { align-items: center; }
+.flex-wrap {flex-wrap: wrap}
 
 
 #Noise {
