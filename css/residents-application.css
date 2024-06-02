@@ -1,0 +1,39 @@
+#ApplicationForm {
+  padding: 5px;
+  border-radius: 6px;
+  border: 4px solid #86501a;
+}
+
+#MushroomWallsWrapper {
+  display: flex;
+  min-height: 10rem;
+}
+
+#MushroomWallsWrapper .center-content {
+  flex: 2;
+  width: 95%; 
+}
+
+.center-content {
+  padding: .5rem;
+}
+
+.vertical-image-border {
+  width: 22px;
+  background: url('/img/banners-dividers/mushrooms-wall.png');
+}
+
+#FormHeader {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+#FormHeader h2 {
+  width: 15rem;
+  margin: 0rem 1rem;
+}
+
+.flipped {
+  transform: scaleX(-1);
+}
