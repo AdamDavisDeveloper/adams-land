@@ -1,0 +1,51 @@
+# osu! play activity tracker – hourly poll + grid render
+# Runs on the branch that triggers the schedule (default branch = main after merge).
+name: osu-tracker
+on:
+  schedule:
+    - cron: "0 * * * *"
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run activity poller
+        id: poll
+        continue-on-error: true
+        env:
+          OSU_CLIENT_ID: ${{ secrets.OSU_CLIENT_ID }}
+          OSU_CLIENT_SECRET: ${{ secrets.OSU_CLIENT_SECRET }}
+          OSU_USER_ID: ${{ secrets.OSU_USER_ID }}
+          TIMEZONE: ${{ vars.TIMEZONE }}
+        run: npm run osu:poll
+
+      - name: Run grid renderer
+        id: grid
+        if: steps.poll.outcome == 'success'
+        run: npm run osu:grid
+
+      - name: Commit and push
+        if: steps.poll.outcome == 'success' && steps.grid.outcome == 'success'
+        run: |
+          if [ -n "$(git status --porcelain osu/osu-days.json osu/osu-grid.jpg)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add osu/osu-days.json osu/osu-grid.jpg
+            git commit -m "chore(osu): update play log and grid"
+            git push
+          fi
