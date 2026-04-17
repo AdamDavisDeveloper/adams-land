@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/favicon/morning.ico" id="dynamic-favicon">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Theater</title>
+    <link rel="stylesheet" href="../Global.css">
+    <link rel="stylesheet" href="../css/theater.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.8.4/plyr.css" />
+</head>
+<body>
+    <div id="Noise"></div>
+    <div id="container">
+        <div id="headerArea">
+            <div id="header" style="height: 183px;">
+                <img class="header-img" src="/img/stamps/clouds.png" alt="clouds stamp">
+            </div>
+            <nav id="navbar" style="margin-bottom: 0px;">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about.html">Info</a></li>
+                    <li><a href="/fun.html">Fun</a></li>
+                    <li><a href="/explore/">Explore</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="MainWrapper">
+            <main>
+                <h1>Theater</h1>
+                <div id="Theater" class="box">
+                  <video id="player" playsinline clickToPlay data-poster="/path/to/poster.jpg">
+                    <source src="./testvids/2007-Dec (5).MOV [TaiZtCh-pMU].mp4" type="video/mp4" />
+                  </video>
+                </div>
+            </main>
+    </div>
+    <script src="/js/dynamicFavicons.js"></script>
+    <script src="https://cdn.plyr.io/3.8.4/plyr.polyfilled.js"></script>
+</body>
+</html>
