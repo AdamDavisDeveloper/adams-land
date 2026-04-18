@@ -1,3 +1,97 @@
+#tv-api-status:empty {
+  display: none;
+}
+
+#tv-api-status {
+  font-size: 0.85rem;
+  white-space: pre-wrap;
+  margin: 0.75rem 0 0;
+}
+
+.tv-now-playing {
+  color: var(--text-green);
+  margin: 0 0 0.5rem;
+  min-height: 1.35em;
+}
+
+.tv-screen {
+  width: 80cqw;
+  max-width: 100%;
+  margin-inline: auto;
+}
+
+.tv-screen-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #000;
+}
+
+.tv-curtain {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  z-index: 5;
+  pointer-events: none;
+  transition: height 0.5s ease;
+}
+
+.tv-curtain--top {
+  top: 0;
+  height: 0%;
+}
+
+.tv-curtain--bottom {
+  bottom: 0;
+  height: 0%;
+}
+
+.tv-screen-inner.tv-screen-inner--curtains-closed .tv-curtain--top,
+.tv-screen-inner.tv-screen-inner--curtains-closed .tv-curtain--bottom {
+  height: 50%;
+}
+
+.tv-controls-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 0.75rem;
+}
+
+.tv-controls-row button {
+  cursor: pointer;
+  border: 1px solid var(--text-green);
+  background-color: #003a42;
+  color: var(--text-green);
+  padding: 0.35rem 0.75rem;
+  font: inherit;
+}
+
+#Television .tv-screen-inner .plyr {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin-inline: 0;
+}
+
+#Television .plyr__video-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+#Television .plyr__controls,
+#Television .plyr__control--overlaid {
+  display: none !important;
+}
+
 #player {
-  max-width: 90vw;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  background-color: #000;
 }

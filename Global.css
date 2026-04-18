@@ -192,6 +192,8 @@ button {
     max-width: 900px;
     min-height: 100vh;
     margin: 0 auto;
+    container-type: inline-size;
+    container-name: site;
 }
 
 #container a {

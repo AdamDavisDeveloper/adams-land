@@ -7,6 +7,7 @@
     <link rel="manifest" href="/site.webmanifest">
     <title>AdamsLand TV</title>
     <link rel="stylesheet" href="../Global.css">
+    <link rel="stylesheet" href="/css/explore.css">
     <link rel="stylesheet" href="../css/theater.css">
     <link rel="stylesheet" href="https://cdn.plyr.io/3.8.4/plyr.css" />
 </head>
@@ -30,15 +31,40 @@
 
         <div id="MainWrapper">
             <main>
-                <h1>TV</h1>
+                <h1>AdamsLand TV</h1>
+                <p>We now have our own televison network! <small>(only one channel for now)</small></p>
                 <div id="Television" class="box">
-                  <video id="player" playsinline clickToPlay data-poster="/path/to/poster.jpg">
-                    <source src="./testvids/2007-Dec (5).MOV [TaiZtCh-pMU].mp4" type="video/mp4" />
-                  </video>
+                  <p id="tv-now-playing" class="tv-now-playing" aria-live="polite"></p>
+                  <div class="tv-screen" aria-label="Television picture">
+                    <div class="tv-screen-inner tv-screen-inner--curtains-closed" id="tv-screen-inner">
+                      <video id="player" playsinline></video>
+                      <div class="tv-curtain tv-curtain--top" aria-hidden="true"></div>
+                      <div class="tv-curtain tv-curtain--bottom" aria-hidden="true"></div>
+                    </div>
+                  </div>
+                  <div class="tv-controls-row" role="group" aria-label="Television controls">
+                    <button type="button" id="tv-btn-start">On</button>
+                    <button type="button" id="tv-btn-skip">Skip</button>
+                    <button type="button" id="tv-btn-off">Off</button>
+                  </div>
+                  <pre id="tv-api-status" aria-live="polite" aria-label="Playlist load errors"></pre>
                 </div>
             </main>
+
+        <aside id="leftSidebar" style="margin-right: 0px;">
+            <h2>Explore Regions</h2>
+            <ul class="sprouted-list">
+                <a href="/explore/"><li>Town Square</li></a>
+                <a href="/explore/train-station.html"><li>Train Station</li></a>
+                <a href="/explore/toy-box.html"><li>Toy Box</li></a>
+                <a href="/tv/"><li><u>AdamsLand TV</u> 📍</li></a>
+            </ul>
+        </aside></div>
+
     </div>
+
     <script src="/js/dynamicFavicons.js"></script>
     <script src="https://cdn.plyr.io/3.8.4/plyr.polyfilled.js"></script>
+    <script src="./tv.js"></script>
 </body>
 </html>
