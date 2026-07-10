@@ -6,9 +6,23 @@
 
 .left { flex: 1; }
 .right { flex: 1; }
-
-#Headshot { height: 10rem }
 .left a { display: block }
+
+#AboutPhotos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+
+#Avatar {
+    height: 15rem;
+}
+
+#Landscape {
+} #Landscape img {
+  height: 15rem;
+}
 
 #AboutButtons {
     align-items: first baseline;
@@ -25,6 +39,21 @@
 #iMood {
     width: 48px;
     height: 15px;
+}
+
+.press-pic {
+  height: 10rem;
+}
+
+.title-date-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+} .title-date-header span {
+  font-weight: 200;
+  font-size: 16px;
 }
 
 /* Global Overwrites (caution) */

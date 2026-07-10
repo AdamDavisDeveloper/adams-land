@@ -6,7 +6,7 @@
     --text-green: #dff8d6;
     --text-green-hover: #9fc292;
 
-    --quote-width: 80%;
+    --quote-width: 70%;
 }
 
 @font-face {
@@ -43,6 +43,7 @@ q {
     display: block;
     width: var(--quote-width);
     margin: auto;
+    margin-left: 7%;
 }
 
 button {
@@ -340,6 +341,17 @@ strong {
 }
 
 
+/* Global Classes */
+.oblique {
+  font-style: oblique;
+}
+
+.float-right {
+  float: right;
+  margin: .75rem;
+}
+
+/* MEDIA STYLES (MOBILE) */
 @media only screen and (max-width: 800px) {
     #MainWrapper {
         flex-wrap: wrap;
