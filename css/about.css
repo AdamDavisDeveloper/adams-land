@@ -67,4 +67,8 @@
         flex-direction: column;
         align-items: flex-start;
     }
+
+    #Me {
+      margin-left: 1.25rem;
+    }
 }
