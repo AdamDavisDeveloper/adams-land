@@ -1,0 +1,58 @@
+------------------------------------
+Adamsland ~ Todo List & Ideas
+------------------------------------
+
+Legend >>>
+[-] === Pending
+[>] === In Progress
+[x] === Done
+[?] === Question
+[!] === Urgent / Issue
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+>>> Coming Up...
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[>] Astro Migration (Goal date: Friday, July 17th)
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+>>> ASTRO MIGRATION
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+info: I want to move the website's architecture over from
+pure vanilla to using Astro. This way I can have easier
+control over updating the site and its content. The goal is
+still to keep everything as simple and vanilla as I can but
+I need to start using re-usable components and layouts asap.
+
+[x] Look into Astro and get a basic understanding of how it works
+[>] Create a new branch
+[-] Start a Cursor conversation and understand what will be involved
+[-] Determine how the package install and adoption will
+[-] Break out the adamsland layout (main portion repeated most everywhere)
+    into a /layout directory for easy re-use
+[-] Transition every page into using the new layout 
+[-] Transition all of the pages over to the new /pages directory
+[-] Determine if anything can be componentized / made modular for re-use
+[-] Final pass to ensure nothing was broken during the migration
+[-] Commit final to remote 
+[-] Merge with main branch for official release
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+>>> VISUAL NOVEL ENGINE
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+info: This will be an lightweight engine for creating visual-novel
+style content on the web. Things to include:
+1. A text-box section down below for character speech
+2. A background image with config properies like Blur/darken/etc.
+   which can be set for each "scene".
+3. A timeline creator for each "scene" which is a collection of "pages".
+4. A fuction (or something) for calling a scene which renders the component
+   with the appropriate scene or array of scenes.
+5. Each scene will be configured with: character image(s), character text (one per page),
+   background image (default black), typing/talking speed, player actions (default is "next-page"),
+   chat/text background (just a few options in case the background doesn't match the text box), and 
+   music.
+
+This will be a great way to have people engage with characters in Adamsland. :)
