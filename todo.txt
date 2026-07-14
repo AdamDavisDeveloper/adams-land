@@ -26,8 +26,8 @@ still to keep everything as simple and vanilla as I can but
 I need to start using re-usable components and layouts asap.
 
 [x] Look into Astro and get a basic understanding of how it works
-[>] Create a new branch
-[-] Start a Cursor conversation and understand what will be involved
+[x] Create a new branch
+[>] Start a Cursor conversation and understand what will be involved
 [-] Determine how the package install and adoption will
 [-] Break out the adamsland layout (main portion repeated most everywhere)
     into a /layout directory for easy re-use
@@ -47,12 +47,30 @@ style content on the web. Things to include:
 1. A text-box section down below for character speech
 2. A background image with config properies like Blur/darken/etc.
    which can be set for each "scene".
-3. A timeline creator for each "scene" which is a collection of "pages".
+3. A timeline creator for each "scene" which is a collection of "pages"
 4. A fuction (or something) for calling a scene which renders the component
    with the appropriate scene or array of scenes.
-5. Each scene will be configured with: character image(s), character text (one per page),
+5. Each scene will be configured with: character image(s) + orientation (left/right), character text (one per page),
    background image (default black), typing/talking speed, player actions (default is "next-page"),
+   chat/text orientation (left/right side - switch side for each currently speaking character),
    chat/text background (just a few options in case the background doesn't match the text box), and 
-   music.
+   music
 
 This will be a great way to have people engage with characters in Adamsland. :)
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+>>> IDEAS
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[-] Live Adamsland clock tower
+[-] A mini game (widget box style) where you play 
+    rock-paper-scissors against a bunny
+
+
+------------------------------------
+Notes on what I like in indie websites
+------------------------------------
+- When there are many things to look at and interact with
+  directly on the main page. before even reading the page links
+  I can see and play with stuff which makes me want to explore more
+  the world which the dev has crafted so far. This is important to me.
