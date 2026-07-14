@@ -1,13 +1,24 @@
 {
-	"dependencies": {
-		"dotenv": "^16.0.0",
-		"firebase": "^12.10.0",
-		"moment": "^2.29.1",
-		"particles.js": "^2.0.0",
-		"sharp": "^0.33.5"
-	},
-	"scripts": {
-		"osu:poll": "node scripts/activity-poller.js",
-		"osu:grid": "node scripts/grid-renderer.js"
-	}
+  "name": "adams-land",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "osu:poll": "node scripts/activity-poller.js",
+    "osu:grid": "node scripts/grid-renderer.js"
+  },
+  "dependencies": {
+    "astro": "^7.0.9",
+    "dotenv": "^16.0.0",
+    "firebase": "^12.10.0",
+    "moment": "^2.29.1",
+    "particles.js": "^2.0.0",
+    "sharp": "^0.33.5"
+  }
 }
