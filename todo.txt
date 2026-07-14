@@ -65,6 +65,9 @@ This will be a great way to have people engage with characters in Adamsland. :)
 [-] Live Adamsland clock tower
 [-] A mini game (widget box style) where you play 
     rock-paper-scissors against a bunny
+[-] An Adamsland dance club which is a real-time server 
+    where you can see and interact with other live players;
+    could use music by She and Dusqk
 
 
 ------------------------------------
