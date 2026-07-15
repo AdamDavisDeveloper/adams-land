@@ -13,7 +13,8 @@ Legend >>>
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 >>> Coming Up...
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-[>] Astro Migration (Goal date: Friday, July 17th)
+[x] Astro Migration (Goal date: Friday, July 17th)
+    - finished Tues. night the 14th
 
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -27,16 +28,16 @@ I need to start using re-usable components and layouts asap.
 
 [x] Look into Astro and get a basic understanding of how it works
 [x] Create a new branch
-[>] Start a Cursor conversation and understand what will be involved
-[-] Determine how the package install and adoption will
-[-] Break out the adamsland layout (main portion repeated most everywhere)
+[x] Start a Cursor conversation and understand what will be involved
+[x] Determine how the package install and adoption will
+[x] Break out the adamsland layout (main portion repeated most everywhere)
     into a /layout directory for easy re-use
-[-] Transition every page into using the new layout 
-[-] Transition all of the pages over to the new /pages directory
-[-] Determine if anything can be componentized / made modular for re-use
-[-] Final pass to ensure nothing was broken during the migration
-[-] Commit final to remote 
-[-] Merge with main branch for official release
+[x] Transition every page into using the new layout 
+[x] Transition all of the pages over to the new /pages directory
+[x] Determine if anything can be componentized / made modular for re-use
+[x] Final pass to ensure nothing was broken during the migration
+[x] Commit final to remote 
+[x] Merge with main branch for official release
 
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
