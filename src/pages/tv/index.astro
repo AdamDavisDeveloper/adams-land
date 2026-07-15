@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ExploreSidebar from '../../components/ExploreSidebar.astro';
+import '../../styles/explore.css';
+import '../../styles/theater.css';
+---
+<BaseLayout tabTitle="AdamsLand TV" headerImg="/img/stamps/clouds.png">
+  <link slot="head" rel="stylesheet" href="https://cdn.plyr.io/3.8.4/plyr.css" />
+
+  <div id="MainWrapper">
+    <main>
+      <h1>AdamsLand TV</h1>
+      <p>We now have our own televison network! <small>(only one channel for now)</small></p>
+      <div id="Television" class="box">
+        <p id="tv-now-playing" class="tv-now-playing" aria-live="polite"></p>
+        <div class="tv-screen" aria-label="Television picture">
+          <div class="tv-screen-inner tv-screen-inner--curtains-closed" id="tv-screen-inner">
+            <video id="player" playsinline></video>
+            <div class="tv-curtain tv-curtain--top" aria-hidden="true"></div>
+            <div class="tv-curtain tv-curtain--bottom" aria-hidden="true"></div>
+          </div>
+        </div>
+        <div class="tv-controls-row" role="group" aria-label="Television controls">
+          <button type="button" id="tv-btn-start">On</button>
+          <button type="button" id="tv-btn-skip">Skip</button>
+          <button type="button" id="tv-btn-off">Off</button>
+        </div>
+        <pre id="tv-api-status" aria-live="polite" aria-label="Playlist load errors"></pre>
+      </div>
+    </main>
+
+    <ExploreSidebar currentExploreLocation="tv" />
+  </div>
+
+  <script slot="scripts" is:inline src="https://cdn.plyr.io/3.8.4/plyr.polyfilled.js"></script>
+  <script slot="scripts" is:inline src="/tv/tv.js"></script>
+</BaseLayout>

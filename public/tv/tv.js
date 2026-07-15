@@ -259,7 +259,7 @@
   }
 
   async function fetchPlaylistJson() {
-    const response = await fetch("./playlist.json", { cache: "no-store" });
+    const response = await fetch("/tv/playlist.json", { cache: "no-store" });
     if (!response.ok) {
       throw new Error("playlist fetch failed");
     }

@@ -1,6 +1,39 @@
 [build]
-    functions = "cloud-functions"
+  command = "npm run build"
+  publish = "dist"
+  functions = "cloud-functions"
+
 [[redirects]]
-    from = "/api/*"
-    to = "/.netlify/cloud-functions/:splat"
-    status = 200
+  from = "/api/*"
+  to = "/.netlify/cloud-functions/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/about.html"
+  to = "/about"
+  status = 301
+
+[[redirects]]
+  from = "/fun.html"
+  to = "/fun"
+  status = 301
+
+[[redirects]]
+  from = "/contact.html"
+  to = "/post-office"
+  status = 301
+
+[[redirects]]
+  from = "/updates.html"
+  to = "/updates"
+  status = 301
+
+[[redirects]]
+  from = "/explore/train-station.html"
+  to = "/explore/train-station"
+  status = 301
+
+[[redirects]]
+  from = "/explore/toy-box.html"
+  to = "/explore/toy-box"
+  status = 301
