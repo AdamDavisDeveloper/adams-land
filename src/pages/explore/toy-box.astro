@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ExploreSidebar from '../../components/ExploreSidebar.astro';
+import '../../styles/explore.css'
+import '../../styles/toy-box.css'
+---
+<BaseLayout tabTitle="Toy Box" headerImg="/img/collection/LeaF.png">
+  <div id="MainWrapper">
+    <main id="ToyBox">
+        <div class="search-container">
+            <h1>Adams Toy Box</h1>
+            <p><small>I'm still working on consistent naming conventions for these images.</small></p>
+            <div id="QuickReturn">
+                <a class="flex" href="/explore/">
+                    <p>Click to warp to Town Square</p>
+                    <img src="/img/collection/palace.png" alt="palace">
+                </a>
+            </div>
+            <div id="SearchBar">
+                <input type="text" id="search-input" placeholder="Filter images...">
+            </div>
+        </div>
+        <div id="image-grid" class="image-grid"></div>
+    </main>
+
+      <ExploreSidebar currentExploreLocation="toy-box" />
+  </div>
+
+  <script slot="scripts" is:inline src="/js/img-grid.js"></script>
+</BaseLayout>

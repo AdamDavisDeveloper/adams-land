@@ -1,0 +1,84 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ExploreSidebar from '../../components/ExploreSidebar.astro';
+import '../../styles/explore.css'
+import '../../styles/train-station.css';
+---
+<BaseLayout tabTitle="Train Station" headerImg="/img/collection/LeaF.png">
+  <div id="MainWrapper">
+    <main>
+        <h1>Train Station 🚃</h1>
+        <div id="PlaqueWrapper">
+            <div id="CommemorativePlaque">
+                <h2>
+                    <small>This station</small> <br>
+                    Proudly Built by <br>
+                    <span class="shimmer-text">The Toad's Guild</span> <br>
+
+                    <div class="horizontal-divider" style="margin: 0; margin-top: .5rem;"></div>
+
+                    <small>Spring MMXXIV</small>
+                </h2>
+            </div>
+            <img id="ToadForman" src="/img/toad-foreman.png" alt="toad foreman">
+        </div>
+        <p>Here is a collection of 88x31 buttons of other website creators who I think are doing really cool things.</p>
+        <p>
+            To visit a neighbor, just click their button and the train will take you to their stop! <br>
+            <small>A new tab will open for you to explore their world.</small>
+        </p>
+
+        <div id="Train">
+            <img class="train-img" src="/explore/img/train.gif" alt="locomotive engine">
+        </div>
+        <div id="Destinations" class="box">
+            <header>
+                <h2>Destinations 🚏🛤</h2>
+                <a href="https://www.reddit.com/r/PixelArt/comments/13pkvg6/train_station_by_nihao_pixel/">
+                    <img class="train-station-img" src="/explore/img/train-station--artby-nihao.jpg" alt="train station - art by Niaho Pixel">
+                </a>
+            </header>
+
+            <div id="DestinationButtons">
+                <a href="https://goblin-heart.net" target="_blank">
+                    <img src="/img/link-buttons/goblin-heart.gif" alt="Goblin Heart">
+                </a>
+                <a href="https://cloverbell.neocities.org/" target=blank>
+                    <img src="https://cloverbell.neocities.org/n_n/cloverbell.gif">
+                </a>
+                <a href="https://vivarism.net/" target="_blank">
+                    <img src="/img/link-buttons/vivarism.gif" alt="Vivarism">
+                </a>
+                <a href="https://cinni.net/" target=blank>
+                    <img src="https://cinni.net/images/button/cinnibutton1.gif">
+                </a>
+                <a href="https://maria.town/" target="_blank">
+                    <img src="/img/link-buttons/maria-town.png" alt="Maria Town">
+                </a>
+                <a href="https://nuel.pw/" target="_blank">
+                    <img src="/img/link-buttons/nuel.gif" alt="Nuel">
+                </a>
+                <a href="https://noodledesk.net" target="_blank">
+                    <img src="/img/link-buttons/noodle-desk.gif" alt="Noodle Desk">
+                </a>
+                <a href="https://ocean-waves.xyz" target="_blank">
+                    <img src="/img/link-buttons/ocean-waves.gif" alt="Ocean Waves">
+                </a>
+                <a href="https://maya.land" target="_blank">
+                    <img src="/img/link-buttons/maya-land.png" alt="Maya Land">
+                </a>
+                <a href="https://frills.dev" target="_blank">
+                    <img src="/img/link-buttons/frills.png" alt="Frills">
+                </a>
+                <a href="https://marea.neocities.org/" target="_blank">
+                    <img src="/img/link-buttons/marea.gif" alt="Marea">
+                </a>
+                <a href="https://unicodeangel.neocities.org" target="_blank">
+                    <img src="https://unicodeangel.neocities.org/imgs/UnicodeAngelButton2.gif" alt="Unicode Angel">
+                </a>
+            </div>
+        </div>
+    </main>
+    <ExploreSidebar currentExploreLocation="train-station" />
+  </div>
+</BaseLayout>

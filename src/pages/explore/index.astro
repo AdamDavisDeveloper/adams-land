@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ExploreSidebar from '../../components/ExploreSidebar.astro';
+import '../../styles/explore.css'
+---
+<BaseLayout tabTitle="Town Square" headerImg="/img/collection/LeaF.png">
+  <div id="MainWrapper">
+      <main>
+          <h1>Adams Land Town Square 🏡</h1>
+          <h2>Welcome visitors and residents!</h2>
+          <p>The Adams Land town square is where you can start your journey. Take a look at the "Explore Regions" section for areas which are now open for visitors.</p>
+      </main>
+
+      <ExploreSidebar currentExploreLocation="town-square" />
+  </div>
+</BaseLayout>
