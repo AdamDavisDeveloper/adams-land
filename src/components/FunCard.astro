@@ -1,0 +1,32 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  imageSrc: string;
+  imageAlt?: string;
+  outlink: string;
+  buttonLabel?: string;
+  lastCard?: boolean;
+}
+const { title, description, imageSrc, imageAlt, outlink, buttonLabel = "Visit the Website", lastCard = false } = Astro.props;
+---
+<div class="fun-card">
+  <div class="flex space-between flex-wrap">
+      <div class="text-left">
+        <h2>{ title }</h2>
+          <p>
+            { description }
+          </p>
+      </div>
+      <div class="img-right">
+        <img src={ imageSrc } alt={ imageAlt } >
+      </div>
+  </div>
+  <div class="right-align">
+    <a href={ outlink }>
+      <button class="fun-forest-button">{ buttonLabel }</button>
+      </a>
+  </div>
+</div>
+
+{ lastCard && <div class="items-divider"></div> }

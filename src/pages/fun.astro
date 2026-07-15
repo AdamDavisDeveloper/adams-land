@@ -1,0 +1,63 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FunCard from '../components/FunCard.astro';
+import '../styles/fun.css';
+
+const funItemsData = [
+  {
+  title: `Gossips Web`,
+  description: `"The directory of handmade websites." A great place to start exploring the greatest side of the internet: personal, handmade websites.`,
+  imageSrc: `./img/fun-forest/gossips-web.png`,
+  imageAlt: `gossips web website screenshot`,
+  outlink: `https://gossipsweb.net/`,
+  },
+  {
+  title: `PixelArt 👾`,
+  description: `PixelArt allows you to create pixel art for free directly in your browser!`,
+  imageSrc: `./img/fun-forest/pixel-art.png`,
+  imageAlt: `pixel art website screenshot`,
+  outlink: `https://www.pixilart.com/draw`,
+  },
+  {
+  title: `Typo Hound 🐶`,
+  description: `Typo Hound searches eBay for keywords that you provide, but it only searches for possible misspelled versions of your search terms, so you have a better chance at finding hidden deals that others might miss.`,
+  imageSrc: `./img/fun-forest/typo-hound.png`,
+  imageAlt: `typo hound website screenshot`,
+  outlink: `https://typohound.com/`,
+  },
+];
+---
+<BaseLayout tabTitle="Fun Forest" headerImg="/img/collection/gnome.png">
+  <main>
+     <header>
+      <img src="/img/blinkies/fun-forest.gif" alt="Fun Forest title blinkie">
+      <p>This is a growing forest filled with toys, games, interesting finds, and fun things to do while you pass through adams land. Who needs algorithms feeding us endless streams of content when we have places to touch grass (like the fun forest)?</p>
+      <p>Some things have been created by me and those are marked.</p>
+      <div id="Forest" class="flex space-between">
+          <img id="cedar-01" src="./img/collection/autumn_cedar.png" alt="cedar tree">
+          <img id="cedar-02" src="./img/collection/autumn_cedar.png" alt="cedar tree">
+          <img id="cedar-03" src="./img/collection/autumn_cedar.png" alt="cedar tree">
+          <img id="cedar-04" src="./img/collection/autumn_cedar.png" alt="cedar tree">
+      </div>
+
+      <div id="ForestFriend" class="flex center">
+          <div id="Bonsly" class="talking-img">
+              <img src="./img/pokemon-gifs/bonsly.gif" alt="bonsly pokemon">
+              <div class="speech-bubble"><p>Hope you have fun here! doo do dooo 🎶</p></div>
+          </div>
+          <img id="Doorway" src="./img/clubp-door.png" alt="">
+      </div>
+     </header>
+      {funItemsData.map((item, index) => (
+        <FunCard
+          title={item.title}
+          description={item.description}
+          imageSrc={item.imageSrc}
+          imageAlt={item.imageAlt}
+          outlink={item.outlink}
+          lastCard={index < funItemsData.length - 1}
+        />
+      ))}
+  </main>
+</BaseLayout>
+
