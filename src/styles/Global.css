@@ -331,6 +331,20 @@ strong {
     pointer-events: all;
 }
 #AdamsLandButton { cursor: pointer; }
+#AdamsLandCopyNotice {
+    display: none;
+    margin: 0.5rem 0 0;
+    padding: 0.4rem 0.55rem;
+    max-width: 14rem;
+    font-size: 0.85rem;
+    line-height: 1.3;
+    color: var(--text-green);
+    background: #003a42;
+    border: 1px solid var(--text-green);
+}
+#AdamsLandCopyNotice.is-visible {
+    display: block;
+}
 #AccessCounter {
     display: flex;
     justify-content: flex-start;
