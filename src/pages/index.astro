@@ -1,0 +1,64 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout tabTitle="Welcome to adams.land!" headerImg="/img/pokemon-gifs/shaymin.gif">
+  <div id="MainWrapper">
+    <main id="Home">
+        <header class="custom-emojis flex align-center">
+            <h1>Welcome to Adams Land!</h1>
+            <img src="/img/red-mushroom.png" alt="red mushroom">
+        </header>
+        <p>
+          <strong>
+            Nestled deep within the world wide web lies a modest but growing land
+            just waiting to be explored.
+            The fungi and frogs are excited to meet you!
+          </strong>
+        </p>
+
+        <img style="width: 85%;" src="/img/ocean-rock.JPEG" alt="" />
+
+        <p>🥕🍄🌱🌾🌲🌺🍃🌱🌻🌷🎍🪷🌳🌼🌿🍄🌱🌺🌳🍁🌸🌱🌻</p>
+
+        <q>The lands are now back to being developed! We celebrate the return of Adam from his explorations.</q>
+        <div id="WormQuote" class="right-align"><span>– 🎺🐛</span></div>
+        <p>Adams Land is still growing and there are many plans for the future so check back in to see what's new! Latest addition: <a href="/tv/">AdamsLand TV</a></p>
+
+    </main>
+    
+    <aside id="leftSidebar" style="margin-right: 0px;">
+        <div id="AdamsLandBtnWrapper"> 
+            <img id="AdamsLandButton" src="/img/link-buttons/adamsland.png" alt="adams land 81x33 website share/link button">
+        </div>
+        <h2>Recent News:</h2>
+        <div class="box">
+            <p>General Updates</p>
+            <ul class="sprouted-list">
+              <li>Published first ever <a href="/about">Press from Adam</a>. New images and new beginnings.</li>
+              <li>AdamsLand TV is now airing its first channel! <a href="/tv/">Watch now...</a></li>
+              <li>New image for info booth. Thanks <a href="https://vivarism.net/" target="_blank">Flonne!</a></li>
+            </ul>
+            <div class="right-align">
+                <a href="/updates">full logs...</a>
+            </div>
+        </div>
+
+        <!--
+        <div id="AccessCounter">
+            <p>Visitors:</p>
+            <script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=39592387&main=1"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=39592387&main=1" /></noscript>
+        </div>
+        -->
+
+        <div>
+          <p>All photography made by Adam.</p>
+          <p>
+            I try to credit non-original art as much as possible. 
+            Reach out if you can help me with anything I missed.
+          </p>
+        </div>
+    </aside>
+  </div>
+ 
+  <script slot="scripts" is:inline src="/js/copyToClip.js"></script>
+</BaseLayout>

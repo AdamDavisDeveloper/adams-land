@@ -1,0 +1,12 @@
+---
+const { currentExploreLocation } = Astro.props;
+---
+<aside id="leftSidebar" style="margin-right: 0px;">
+    <h2>Explore Regions</h2>
+    <ul class="sprouted-list">
+      <li><a href="/explore">Town Square {currentExploreLocation === "town-square" ? '📍' : ''}</a></li>
+      <li><a href="/explore/train-station">Train Station {currentExploreLocation === "train-station" ? '📍' : ''}</a></li>
+      <li><a href="/explore/toy-box">Toy Box {currentExploreLocation === "toy-box" ? '📍' : ''}</a></li>
+      <li><a href="/tv">AdamsLand TV {currentExploreLocation === "tv" ? '📍' : ''}</a></li>
+    </ul>
+</aside>

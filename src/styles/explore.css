@@ -1,0 +1,8 @@
+small {
+    font-size: .75rem;
+}
+
+/* Global Overwrites */
+#leftSidebar {
+    order: 1;
+}

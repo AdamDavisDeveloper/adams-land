@@ -7,8 +7,49 @@ Visit: [Adams Land](https://adams.land)
 
 ![proudly-under-construction-since](https://user-images.githubusercontent.com/68540487/133911402-15c9f2fe-7e04-4465-ad8b-d75132b3ea7c.gif)
 
-## dev notes
+## Dev
 
-when running your dev server locally, run `netlify dev` which will run on `localhost:8888` & pull env vars from netlify dashboard to use in the project.
+```bash
+npm install
+npm run dev
+```
 
-When updating the images JSON file, run this in the root dir: `python3 img-json.py img/tiny-pixels img/medium-pixels img/animals img/collection img/plants img/stamps img/banners-dividers img/blinkies`. Make sure to update this if you have created any new image folders you want to include in the toybox.
+Astro serves the site locally (usually `http://localhost:4321`).
+
+```bash
+npm run build    # writes production output to dist/
+npm run preview  # serve the production build locally
+```
+
+For Netlify functions and dashboard env vars locally:
+
+```bash
+netlify dev
+```
+
+That runs on `localhost:8888` and uses the Netlify build/publish settings in `netlify.toml`.
+
+### Toy Box images JSON
+
+When you add image folders for the Toy Box, regenerate `public/images.json` from the repo root:
+
+```bash
+python3 img-json.py \
+  public/img/tiny-pixels \
+  public/img/medium-pixels \
+  public/img/animals \
+  public/img/collection \
+  public/img/plants \
+  public/img/stamps \
+  public/img/banners-dividers \
+  public/img/blinkies
+```
+
+Add any new folders you want included to that command.
+
+### Other scripts
+
+```bash
+npm run osu:poll
+npm run osu:grid
+```

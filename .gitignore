@@ -1,5 +1,9 @@
-node_modules
+node_modules/
+
 # Local Netlify folder
-.netlify
+.netlify/
+
 .env
-.cursor
+.cursor/
+dist/
+.astro
