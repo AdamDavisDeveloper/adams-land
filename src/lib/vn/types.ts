@@ -2,7 +2,6 @@ export type Side = "left" | "right";
 
 export type CharacterDef = {
   name: string;
-  side: Side;
   portraits: Record<string, string>; // must include "default"
 };
 
@@ -19,12 +18,19 @@ export type MusicDef = {
   volume?: number; // default 0.5
 };
 
-export type Line = {
-  speaker: string | null; // null = narrator
+export type NarratorLine = {
+  speaker: null;
   text: string;
-  portrait?: string;      // default "default"
-  side?: Side;            // default from character
 };
+
+export type DialogueLine = {
+  speaker: string;
+  side: Side;
+  text: string;
+  portrait?: string; // default "default"
+};
+
+export type Line = NarratorLine | DialogueLine;
 
 export type Scene = {
   id?: string;
@@ -43,4 +49,5 @@ export type MountVNOptions = {
   storyUrl: string;
   charactersUrl?: string; // default "/vn/characters.json"
   typingMsPerChar?: number; // default 28-ish
+  continueLabel?: string; // default "Continue"
 };

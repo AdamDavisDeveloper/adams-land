@@ -10,12 +10,19 @@ export type StageDom = {
   leftSprite: HTMLImageElement;
   rightSprite: HTMLImageElement;
 
+  textbox: HTMLDivElement;
   name: HTMLDivElement;
   text: HTMLParagraphElement;
-  nextCue: HTMLSpanElement;
+  nextCue: HTMLButtonElement;
 };
 
-export function createStageDom(): StageDom {
+export type CreateStageDomOptions = {
+  continueLabel?: string;
+};
+
+export function createStageDom(opts: CreateStageDomOptions = {}): StageDom {
+  const continueLabel = opts.continueLabel ?? "Continue";
+
   const root = document.createElement("div");
   root.className = "vn-stage";
   root.tabIndex = 0;
@@ -50,6 +57,9 @@ export function createStageDom(): StageDom {
   const textbox = document.createElement("div");
   textbox.className = "vn-textbox";
 
+  const content = document.createElement("div");
+  content.className = "vn-textbox-content";
+
   const name = document.createElement("div");
   name.className = "vn-nameplate";
 
@@ -57,14 +67,16 @@ export function createStageDom(): StageDom {
   text.className = "vn-text";
   text.setAttribute("aria-live", "polite");
 
-  const nextCue = document.createElement("span");
-  nextCue.className = "vn-next-cue";
-  nextCue.textContent = "▶";
+  const nextCue = document.createElement("button");
+  nextCue.type = "button";
+  nextCue.className = "vn-continue";
+  nextCue.textContent = continueLabel;
 
-  textbox.append(name, text, nextCue);
+  content.append(name, text);
+  textbox.append(content, nextCue);
   root.append(bg, sprites, textbox);
 
-  return { root, bgImg, darken, leftSprite, rightSprite, name, text, nextCue };
+  return { root, bgImg, darken, leftSprite, rightSprite, textbox, name, text, nextCue };
 }
 
 export function clearMount(el: Element) {

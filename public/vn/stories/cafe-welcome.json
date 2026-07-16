@@ -16,26 +16,31 @@
       "lines": [
         {
           "speaker": "olet",
+          "side": "right",
           "portrait": "default",
           "text": "Hey there! Pull up a seat."
         },
         {
           "speaker": "olet",
+          "side": "right",
           "portrait": "smile",
           "text": "We've got stories brewing all day."
         },
         {
           "speaker": "olet",
+          "side": "right",
           "portrait": "yuck",
           "text": "Don't mind the loud noises please."
         },
         {
           "speaker": "olet",
+          "side": "right",
           "portrait": "yuck",
           "text": "We're renovating this week and it's more than a bit loud."
         },
         {
           "speaker": "olet",
+          "side": "right",
           "portrait": "smile",
           "text": "Gotta get back to work. See you around, okay?"
         },
@@ -67,6 +72,7 @@
         },
         {
           "speaker": "olet",
+          "side": "left",
           "portrait": "smile",
           "text": "Woah, hey! Didn't expect to see you here."
         }

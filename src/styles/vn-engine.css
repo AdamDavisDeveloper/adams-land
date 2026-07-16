@@ -1,12 +1,21 @@
+@font-face {
+  font-family: OnliLight;
+  src: url("/fonts/Onli/OnliLight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 .vn-stage {
+  --vn-font: OnliLight, sans-serif;
+
   position: relative;
   width: 100%;
-  max-width: 820px;
   aspect-ratio: 16 / 9;
-  border-radius: 10px;
   overflow: hidden;
   background: #111;
   cursor: pointer;
+  font-family: var(--vn-font);
 }
 
 .vn-bg,
@@ -55,6 +64,30 @@
   background: rgba(0, 0, 0, 0.72);
 }
 
+.vn-textbox-content {
+  width: 35%;
+  max-width: 36rem;
+  text-align: left;
+  direction: ltr;
+}
+
+.vn-textbox--left .vn-textbox-content {
+  margin-right: auto;
+}
+
+.vn-textbox--right .vn-textbox-content {
+  margin-left: auto;
+}
+
+.vn-textbox--right .vn-nameplate {
+  text-align: right;
+}
+
+.vn-textbox--center .vn-textbox-content {
+  margin-inline: auto;
+  text-align: center;
+}
+
 .vn-nameplate {
   font-weight: 700;
   margin-bottom: 0.35rem;
@@ -63,11 +96,27 @@
 .vn-text {
   margin: 0;
   min-height: 3.2em;
+  text-align: left;
 }
 
-.vn-next-cue {
+.vn-continue {
   position: absolute;
   right: 1rem;
   bottom: 0.75rem;
-  opacity: 0.5;
+  margin: 0;
+  padding: 0.25rem 0.7rem;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 0.9em;
+  line-height: 1.2;
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.vn-continue:hover,
+.vn-continue:focus-visible {
+  opacity: 1;
 }

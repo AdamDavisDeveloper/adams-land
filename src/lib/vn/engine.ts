@@ -3,12 +3,21 @@ import { fetchJson } from "./fetchJson";
 import { clearMount, createStageDom } from "./dom";
 import { createTypewriter } from "./typewriter";
 import { createSceneAudio } from "./audio";
+import {
+  EMPTY_SPRITE_PAIR,
+  applySpritePair,
+  spritePairForSpeaker,
+  type SpritePairState,
+} from "./sprites";
 
 export type VNInstance = {
   destroy(): void;
 };
 
+type TextboxAlignment = Side | "center";
+
 const DEFAULT_CHARACTERS_URL = "/vn/characters.json";
+const TEXTBOX_ALIGNMENTS: TextboxAlignment[] = ["left", "right", "center"];
 
 export async function mountVN(selector: string, opts: MountVNOptions): Promise<VNInstance> {
   const mountEl = document.querySelector(selector);
@@ -24,7 +33,7 @@ export async function mountVN(selector: string, opts: MountVNOptions): Promise<V
   ]);
 
   clearMount(mountEl);
-  const dom = createStageDom();
+  const dom = createStageDom({ continueLabel: opts.continueLabel });
   mountEl.append(dom.root);
 
   const tw = createTypewriter(dom.text, typingMs);
@@ -32,6 +41,7 @@ export async function mountVN(selector: string, opts: MountVNOptions): Promise<V
 
   let sceneIndex = 0;
   let lineIndex = 0;
+  let spriteState: SpritePairState = { ...EMPTY_SPRITE_PAIR };
 
   function getScene() {
     return story.scenes[sceneIndex];
@@ -56,19 +66,17 @@ export async function mountVN(selector: string, opts: MountVNOptions): Promise<V
     audio.set(getScene().music);
   }
 
-  function setSpritesHidden() {
-    dom.leftSprite.hidden = true;
-    dom.rightSprite.hidden = true;
-    dom.leftSprite.removeAttribute("src");
-    dom.rightSprite.removeAttribute("src");
-    dom.name.textContent = "";
+  function applyTextboxAlignment(alignment: TextboxAlignment) {
+    for (const value of TEXTBOX_ALIGNMENTS) {
+      dom.textbox.classList.toggle(`vn-textbox--${value}`, value === alignment);
+    }
   }
 
   function renderSpeaker(line: Line) {
-    setSpritesHidden();
-
     if (!line.speaker) {
-      // narrator
+      spriteState = applySpritePair(dom, spriteState, EMPTY_SPRITE_PAIR);
+      dom.name.textContent = "";
+      applyTextboxAlignment("center");
       return;
     }
 
@@ -77,7 +85,6 @@ export async function mountVN(selector: string, opts: MountVNOptions): Promise<V
       throw new Error(`Unknown speaker "${line.speaker}" (check characters.json)`);
     }
 
-    const side: Side = line.side ?? char.side;
     const portraitKey = line.portrait ?? "default";
     const portraitSrc = char.portraits[portraitKey];
 
@@ -85,12 +92,14 @@ export async function mountVN(selector: string, opts: MountVNOptions): Promise<V
       throw new Error(`Missing portrait "${portraitKey}" for "${line.speaker}"`);
     }
 
-    const slot = side === "left" ? dom.leftSprite : dom.rightSprite;
-    slot.src = portraitSrc;
-    slot.alt = char.name;
-    slot.hidden = false;
+    spriteState = applySpritePair(
+      dom,
+      spriteState,
+      spritePairForSpeaker(line.side, portraitSrc, char.name),
+    );
 
     dom.name.textContent = char.name;
+    applyTextboxAlignment(line.side);
   }
 
   function renderLine() {
