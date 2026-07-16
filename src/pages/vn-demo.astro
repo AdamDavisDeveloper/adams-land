@@ -1,0 +1,13 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import "../styles/vn-engine.css";
+---
+
+<BaseLayout tabTitle="VN Test" headerImg="/img/stamps/clouds.png">
+  <main>
+    <h1>VN Test</h1>
+    <div id="vn-stage"></div>
+  </main>
+
+  <script slot="scripts" src="../lib/vn/demo-boot.ts"></script>
+</BaseLayout>
