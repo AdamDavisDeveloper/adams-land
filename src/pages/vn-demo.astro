@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import "../styles/vn-engine.css";
+import demoBootUrl from "../lib/vn/demo-boot.js?url";
 ---
 
 <BaseLayout tabTitle="VN Test" headerImg="/img/stamps/clouds.png">
@@ -9,5 +10,5 @@ import "../styles/vn-engine.css";
     <div id="vn-stage"></div>
   </main>
 
-  <script slot="scripts" src="../lib/vn/demo-boot.ts"></script>
+  <script slot="scripts" type="module" src={demoBootUrl}></script>
 </BaseLayout>
