@@ -15,6 +15,7 @@ Legend >>>
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 [x] Astro Migration (Goal date: Friday, July 17th)
     - finished Tues. night the 14th
+[>] Visual Novel Engine (Goal date: Monday July 20th)
 
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -58,6 +59,16 @@ style content on the web. Things to include:
    music
 
 This will be a great way to have people engage with characters in Adamsland. :)
+
+[x] Create plan for breaking down what needs to be made, roughly how it will be made
+    and split the work into a set of days
+[-] Day One: Schema, assets, demo story
+    [-] Create folder tree
+    [-] Shape a character registry
+    [-] Create an MVP demo story for testing
+    [-] Begin adding demo assets (don't docus too much here)
+    [-] Authoring README
+    [-] Full demo test and commit/push to remote
 
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
