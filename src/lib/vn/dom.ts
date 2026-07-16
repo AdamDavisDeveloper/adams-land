@@ -16,13 +16,7 @@ export type StageDom = {
   nextCue: HTMLButtonElement;
 };
 
-export type CreateStageDomOptions = {
-  continueLabel?: string;
-};
-
-export function createStageDom(opts: CreateStageDomOptions = {}): StageDom {
-  const continueLabel = opts.continueLabel ?? "Continue";
-
+export function createStageDom(): StageDom {
   const root = document.createElement("div");
   root.className = "vn-stage";
   root.tabIndex = 0;
@@ -70,7 +64,7 @@ export function createStageDom(opts: CreateStageDomOptions = {}): StageDom {
   const nextCue = document.createElement("button");
   nextCue.type = "button";
   nextCue.className = "vn-continue";
-  nextCue.textContent = continueLabel;
+  nextCue.textContent = "Continue";
 
   content.append(name, text);
   textbox.append(content, nextCue);

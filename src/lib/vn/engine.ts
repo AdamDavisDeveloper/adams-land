@@ -33,7 +33,7 @@ export async function mountVN(selector: string, opts: MountVNOptions): Promise<V
   ]);
 
   clearMount(mountEl);
-  const dom = createStageDom({ continueLabel: opts.continueLabel });
+  const dom = createStageDom();
   mountEl.append(dom.root);
 
   const tw = createTypewriter(dom.text, typingMs);
@@ -117,6 +117,7 @@ export async function mountVN(selector: string, opts: MountVNOptions): Promise<V
     }
 
     renderSpeaker(line);
+    dom.nextCue.textContent = line.continueLabel ?? "Continue";
     dom.nextCue.style.opacity = "0.5";
     tw.start(line.text);
   }

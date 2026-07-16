@@ -21,6 +21,7 @@ export type MusicDef = {
 export type NarratorLine = {
   speaker: null;
   text: string;
+  continueLabel?: string; // default "Continue"
 };
 
 export type DialogueLine = {
@@ -28,6 +29,7 @@ export type DialogueLine = {
   side: Side;
   text: string;
   portrait?: string; // default "default"
+  continueLabel?: string; // default "Continue"
 };
 
 export type Line = NarratorLine | DialogueLine;
@@ -49,5 +51,4 @@ export type MountVNOptions = {
   storyUrl: string;
   charactersUrl?: string; // default "/vn/characters.json"
   typingMsPerChar?: number; // default 28-ish
-  continueLabel?: string; // default "Continue"
 };
