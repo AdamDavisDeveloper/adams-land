@@ -5,12 +5,12 @@
     {
       "id": "interior",
       "background": {
-        "src": "/explore/vn/bg/cafe.jpg",
+        "src": "/vn/bg/cottage/cottageINTdawnF.png",
         "blur": 0,
         "darken": 0.2
       },
       "music": {
-        "src": "/explore/vn/music/cafe-ambience.mp3",
+        "src": "/vn/music/freah-air.ogg",
         "volume": 0.4
       },
       "lines": [

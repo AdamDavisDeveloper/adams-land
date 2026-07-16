@@ -3,7 +3,7 @@
     "name": "Olet",
     "side": "right",
     "portraits": {
-      "default": "/vn/chars/olet.png",
+      "default": "/vn/chars/olet-normal.png",
       "smile": "/vn/chars/olet-smile.png"
     }
   }
