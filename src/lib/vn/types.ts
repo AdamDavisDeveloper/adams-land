@@ -2,6 +2,8 @@ export type Side = "left" | "right";
 
 export type CharacterDef = {
   name: string;
+  /** Which way the portrait art faces in the source image. */
+  spriteFacing: Side;
   portraits: Record<string, string>; // must include "default"
 };
 
@@ -29,6 +31,8 @@ export type DialogueLine = {
   side: Side;
   text: string;
   portrait?: string; // default "default"
+  /** Mirror the portrait away from the character's default `facing`. */
+  flipped?: boolean; // default false
   continueLabel?: string; // default "Continue"
 };
 

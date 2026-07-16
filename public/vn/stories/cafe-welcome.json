@@ -74,6 +74,7 @@
           "speaker": "olet",
           "side": "left",
           "portrait": "smile",
+          "flipped": true,
           "text": "Woah, hey! Didn't expect to see you here."
         }
       ]

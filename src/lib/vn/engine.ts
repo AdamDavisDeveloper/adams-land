@@ -95,7 +95,12 @@ export async function mountVN(selector: string, opts: MountVNOptions): Promise<V
     spriteState = applySpritePair(
       dom,
       spriteState,
-      spritePairForSpeaker(line.side, portraitSrc, char.name),
+      spritePairForSpeaker(
+        line.side,
+        portraitSrc,
+        char.name,
+        Boolean(line.flipped),
+      ),
     );
 
     dom.name.textContent = char.name;

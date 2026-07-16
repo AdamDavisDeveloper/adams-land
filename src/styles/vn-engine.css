@@ -51,6 +51,10 @@
   object-fit: contain;
 }
 
+.vn-sprite--flipped {
+  transform: scaleX(-1);
+}
+
 .vn-sprite--left { left: 0; }
 .vn-sprite--right { right: 0; }
 

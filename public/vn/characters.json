@@ -1,6 +1,7 @@
 {
   "olet": {
     "name": "Olet",
+    "spriteFacing": "left",
     "portraits": {
       "default": "/vn/chars/olet/olet-normal.png",
       "smile": "/vn/chars/olet/olet-happy.png",

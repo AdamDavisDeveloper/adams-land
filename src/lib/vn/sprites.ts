@@ -1,6 +1,7 @@
 export type SpriteDisplay = {
   src: string;
   alt: string;
+  flipped: boolean;
 } | null;
 
 export type SpritePairState = {
@@ -18,6 +19,8 @@ type SpriteElements = {
   rightSprite: HTMLImageElement;
 };
 
+const FLIPPED_CLASS = "vn-sprite--flipped";
+
 function applySpriteSlot(
   img: HTMLImageElement,
   prev: SpriteDisplay,
@@ -26,6 +29,9 @@ function applySpriteSlot(
   if (next === null) {
     if (!img.hidden) {
       img.hidden = true;
+    }
+    if (img.classList.contains(FLIPPED_CLASS)) {
+      img.classList.remove(FLIPPED_CLASS);
     }
     return;
   }
@@ -40,6 +46,10 @@ function applySpriteSlot(
 
   if (prev?.alt !== next.alt) {
     img.alt = next.alt;
+  }
+
+  if (prev?.flipped !== next.flipped) {
+    img.classList.toggle(FLIPPED_CLASS, next.flipped);
   }
 }
 
@@ -57,8 +67,9 @@ export function spritePairForSpeaker(
   side: "left" | "right",
   src: string,
   alt: string,
+  flipped: boolean,
 ): SpritePairState {
-  const display: SpriteDisplay = { src, alt };
+  const display: SpriteDisplay = { src, alt, flipped };
 
   return {
     left: side === "left" ? display : null,
