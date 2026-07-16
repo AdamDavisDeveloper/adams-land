@@ -10,7 +10,7 @@
         "darken": 0.2
       },
       "music": {
-        "src": "/vn/music/freah-air.ogg",
+        "src": "/vn/music/fresh-air.ogg",
         "volume": 0.4
       },
       "lines": [
@@ -25,8 +25,50 @@
           "text": "We've got stories brewing all day."
         },
         {
+          "speaker": "olet",
+          "portrait": "yuck",
+          "text": "Don't mind the loud noises please."
+        },
+        {
+          "speaker": "olet",
+          "portrait": "yuck",
+          "text": "We're renovating this week and it's more than a bit loud."
+        },
+        {
+          "speaker": "olet",
+          "portrait": "smile",
+          "text": "Gotta get back to work. See you around, okay?"
+        },
+        {
           "speaker": null,
           "text": "The cafe smells like toasted beans and warm sugar."
+        }
+      ]
+    },
+    {
+      "id": "bedroom",
+      "background": {
+        "src": "/vn/bg/cottage/cottageBEDday.png",
+        "blur": 0,
+        "darken": 0.2
+      },
+      "music": {
+        "src": "/vn/music/fresh-air.ogg",
+        "volume": 0.4
+      },
+      "lines": [
+        {
+          "speaker": null,
+          "text": "You wander up a staircase and discover a hidden upstairs bedroom."
+        },
+        {
+          "speaker": null,
+          "text": "You wonder if this is where Olet stays when he's not working downstairs."
+        },
+        {
+          "speaker": "olet",
+          "portrait": "smile",
+          "text": "Woah, hey! Didn't expect to see you here."
         }
       ]
     }

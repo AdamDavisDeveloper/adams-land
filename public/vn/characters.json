@@ -4,7 +4,8 @@
     "side": "right",
     "portraits": {
       "default": "/vn/chars/olet/olet-normal.png",
-      "smile": "/vn/chars/olet/olet-happy.png"
+      "smile": "/vn/chars/olet/olet-happy.png",
+      "yuck": "/vn/chars/olet/olet-yuck.png"
     }
   }
 }
