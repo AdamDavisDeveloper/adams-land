@@ -1,0 +1,34 @@
+{
+  "id": "cafe-welcome",
+  "title": "Welcome to Olet's Cafe",
+  "scenes": [
+    {
+      "id": "interior",
+      "background": {
+        "src": "/explore/vn/bg/cafe.jpg",
+        "blur": 0,
+        "darken": 0.2
+      },
+      "music": {
+        "src": "/explore/vn/music/cafe-ambience.mp3",
+        "volume": 0.4
+      },
+      "lines": [
+        {
+          "speaker": "olet",
+          "portrait": "default",
+          "text": "Hey there! Pull up a seat."
+        },
+        {
+          "speaker": "olet",
+          "portrait": "smile",
+          "text": "We've got stories brewing all day."
+        },
+        {
+          "speaker": null,
+          "text": "The cafe smells like toasted beans and warm sugar."
+        }
+      ]
+    }
+  ]
+}
