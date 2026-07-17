@@ -80,7 +80,7 @@
 }
 
 .vn-textbox--right .vn-textbox-content {
-  margin-left: auto;
+  margin-left: 60%; /* seems to align well for now */
 }
 
 .vn-textbox--right .vn-nameplate {

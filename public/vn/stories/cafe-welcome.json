@@ -24,13 +24,13 @@
           "speaker": "olet",
           "side": "right",
           "portrait": "smile",
-          "text": "We've got stories brewing all day."
+          "text": "Adamsland is less busy this time of year. Many folks travel during the summer."
         },
         {
           "speaker": "olet",
           "side": "right",
           "portrait": "yuck",
-          "text": "Don't mind the loud noises please."
+          "text": "Oh! Don't mind the loud noises please."
         },
         {
           "speaker": "olet",
@@ -47,6 +47,11 @@
         {
           "speaker": null,
           "text": "The cafe smells like toasted beans and warm sugar."
+        },
+        {
+          "speaker": null,
+          "text": "Across the room there is a small staircase where light from above streams down onto the steps.",
+          "continueLabel": "Go upstairs"
         }
       ]
     },
@@ -64,7 +69,7 @@
       "lines": [
         {
           "speaker": null,
-          "text": "You wander up a staircase and discover a hidden upstairs bedroom."
+          "text": "You wander up the staircase and discover a hidden upstairs bedroom."
         },
         {
           "speaker": null,

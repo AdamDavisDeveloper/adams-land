@@ -20,10 +20,15 @@ export type MusicDef = {
   volume?: number; // default 0.5
 };
 
+/** Allowed continue-button style variants (map to `.vn-continue--{name}`). */
+export const CONTINUE_CLASSES = ["rainbow"] as const;
+export type ContinueClass = (typeof CONTINUE_CLASSES)[number];
+
 export type NarratorLine = {
   speaker: null;
   text: string;
   continueLabel?: string; // default "Continue"
+  continueClass?: ContinueClass;
 };
 
 export type DialogueLine = {
@@ -34,6 +39,7 @@ export type DialogueLine = {
   /** Mirror the portrait away from the character's default `facing`. */
   flipped?: boolean; // default false
   continueLabel?: string; // default "Continue"
+  continueClass?: ContinueClass;
 };
 
 export type Line = NarratorLine | DialogueLine;

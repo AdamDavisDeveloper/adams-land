@@ -1,4 +1,11 @@
-import type { CharactersMap, MountVNOptions, Story, Line, Side } from "./types";
+import {
+  CONTINUE_CLASSES,
+  type CharactersMap,
+  type MountVNOptions,
+  type Story,
+  type Line,
+  type Side,
+} from "./types";
 import { fetchJson } from "./fetchJson";
 import { clearMount, createStageDom } from "./dom";
 import { createTypewriter } from "./typewriter";
@@ -72,6 +79,17 @@ export async function mountVN(selector: string, opts: MountVNOptions): Promise<V
     }
   }
 
+  function applyContinueStyle(line: Line) {
+    dom.nextCue.textContent = line.continueLabel ?? "Continue";
+
+    for (const variant of CONTINUE_CLASSES) {
+      dom.nextCue.classList.toggle(
+        `vn-continue--${variant}`,
+        line.continueClass === variant,
+      );
+    }
+  }
+
   function renderSpeaker(line: Line) {
     if (!line.speaker) {
       spriteState = applySpritePair(dom, spriteState, EMPTY_SPRITE_PAIR);
@@ -122,7 +140,7 @@ export async function mountVN(selector: string, opts: MountVNOptions): Promise<V
     }
 
     renderSpeaker(line);
-    dom.nextCue.textContent = line.continueLabel ?? "Continue";
+    applyContinueStyle(line);
     dom.nextCue.style.opacity = "0.5";
     tw.start(line.text);
   }
@@ -139,6 +157,9 @@ export async function mountVN(selector: string, opts: MountVNOptions): Promise<V
   function endStory() {
     tw.stop();
     audio.stop();
+    for (const variant of CONTINUE_CLASSES) {
+      dom.nextCue.classList.remove(`vn-continue--${variant}`);
+    }
     dom.nextCue.style.opacity = "0";
     // ?? maybe keep last line; or show "(End.)"
   }
